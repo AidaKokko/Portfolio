@@ -179,7 +179,15 @@ export default function Home() {
                   companyDesc: 'A leading recruitment firm specializing in executive search and talent acquisition across Asia.',
                   location: 'Singapore',
                   period: 'Aug 2015 - Aug 2016',
-                  description: 'Full-time role providing comprehensive HR administrative support in a recruitment firm.',
+                  description: (
+                    <div className="space-y-2">
+                      <p>Full-time role providing comprehensive HR administrative support in a recruitment firm.</p>
+                      <div className="ml-6 space-y-2">
+                        <p>• Onboarded 50+ new hires by managing documentation collection, including work visas, drug testing, and medical reports, ensuring 100% compliance with Singapore's ministry of manpower regulations and reducing onboarding time by 15%.</p>
+                        <p>• Demonstrated discretion, organization, and attention to detail in a fast-paced environment.</p>
+                      </div>
+                    </div>
+                  ),
                 },
                 {
                   title: 'Junior Graphic Designer',
