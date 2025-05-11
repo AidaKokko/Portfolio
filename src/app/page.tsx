@@ -195,7 +195,15 @@ export default function Home() {
                   companyDesc: 'A dynamic marketing agency providing creative solutions for brand development and digital marketing.',
                   location: 'Petaling Jaya, Malaysia',
                   period: 'Jan 2014 - Jun 2015',
-                  description: 'Full-time role creating visual content and design materials for marketing campaigns.',
+                  description: (
+                    <div className="space-y-2">
+                      <p>Full-time role creating visual content and design materials for marketing campaigns.</p>
+                      <div className="ml-6 space-y-2">
+                        <p>• Designed and prepared visual materials for print and digital formats, including brochures, business cards, flyers, and large-scale signage.</p>
+                        <p>• Ensured high-quality output by performing prepress checks and adhering to color, resolution, and print standards.</p>
+                      </div>
+                    </div>
+                  ),
                 },
                 {
                   title: 'Customer Support Representative',
