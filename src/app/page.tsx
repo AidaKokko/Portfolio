@@ -150,8 +150,8 @@ export default function Home() {
                   description: (
                     <>
                       <p>Completed a 4-month internship in a hybrid work environment, gaining valuable industry experience.</p>
-                      <p>• Gained exposure to event planning software and internal collaboration tools.</p>
-                      <p>• Resolved last-minute issues on-site, ensuring seamless experiences for attendees, staff, and partners.</p>
+                      <p className="pl-4">• Gained exposure to event planning software and internal collaboration tools.</p>
+                      <p className="pl-4">• Resolved last-minute issues on-site, ensuring seamless experiences for attendees, staff, and partners.</p>
                     </>
                   ),
                 },
