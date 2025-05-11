@@ -243,7 +243,15 @@ export default function Home() {
                   companyDesc: 'A USA-based business consulting firm focused on market research and business strategy development.',
                   location: 'Lapu-Lapu, Philippines',
                   period: 'May 2007 - Jun 2008',
-                  description: 'Full-time role conducting market research and analysis to support business decisions.',
+                  description: (
+                    <div className="space-y-2">
+                      <p>Full-time role conducting market research and analysis to support business decisions.</p>
+                      <div className="ml-6 space-y-2">
+                        <p>• Responsible for gathering and analyzing large amounts of customer data pertaining to the company's target market, as well as distributing prospect leads to the sales department.</p>
+                        <p>• Filter potential leads so that sales representatives can make more sales by calling the right customers.</p>
+                      </div>
+                    </div>
+                  ),
                 },
               ].map((role) => (
                 <div key={role.title} className="flex flex-col bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow border border-gray-700 hover:border-emerald-500">
