@@ -211,7 +211,15 @@ export default function Home() {
                   companyDesc: 'A USA-based global business process outsourcing (BPO) company delivering customer experience solutions.',
                   location: 'Cebu City, Philippines',
                   period: 'Jun 2010 - Mar 2012',
-                  description: 'Full-time role providing customer support services in a BPO environment.',
+                  description: (
+                    <div className="space-y-2">
+                      <p>Full-time role providing customer support services in a BPO environment.</p>
+                      <div className="ml-6 space-y-2">
+                        <p>• Analyzed 200+ customer interactions to identify top escalation reasons.</p>
+                        <p>• Assisted with phone connectivity issues using SIM card and device activation, network diagnostics, ticketing systems, and network monitoring tools.</p>
+                      </div>
+                    </div>
+                  ),
                 },
                 {
                   title: 'Technical Writer',
