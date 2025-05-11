@@ -148,11 +148,13 @@ export default function Home() {
                   location: 'Tampere, Finland',
                   period: 'Mar 2023 - Jun 2023',
                   description: (
-                    <>
+                    <div className="space-y-2">
                       <p>Completed a 4-month internship in a hybrid work environment, gaining valuable industry experience.</p>
-                      <p className="pl-4">• Gained exposure to event planning software and internal collaboration tools.</p>
-                      <p className="pl-4">• Resolved last-minute issues on-site, ensuring seamless experiences for attendees, staff, and partners.</p>
-                    </>
+                      <div className="ml-6 space-y-2">
+                        <p>• Gained exposure to event planning software and internal collaboration tools.</p>
+                        <p>• Resolved last-minute issues on-site, ensuring seamless experiences for attendees, staff, and partners.</p>
+                      </div>
+                    </div>
                   ),
                 },
                 {
