@@ -47,7 +47,7 @@ export default function Home() {
               Interested in Operations / Coordinator / Event Related Roles
             </p>
             <p className="text-lg text-gray-400 mb-8 max-w-xl">
-              "My career journey reflects a commitment to boosting efficiency, promoting collaboration, and introducing new solutions that are in line with company objectives."
+              "Attention to detail is my hallmark."
             </p>
             <div className="flex gap-4">
               <a
