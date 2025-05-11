@@ -147,7 +147,7 @@ export default function Home() {
                   companyDesc: 'A global leader in glass processing technology, providing innovative solutions for architectural, automotive, and solar glass industries.',
                   location: 'Tampere, Finland',
                   period: 'Mar 2023 - Jun 2023',
-                  description: 'Completed a 4-month internship in a hybrid work environment, gaining valuable industry experience. Gained exposure to event planning software and internal collaboration tools. Resolved last-minute issues on-site, ensuring seamless experiences for attendees, staff, and partners.',
+                  description: 'Completed a 4-month internship in a hybrid work environment, gaining valuable industry experience.\n• Gained exposure to event planning software and internal collaboration tools.\n• Resolved last-minute issues on-site, ensuring seamless experiences for attendees, staff, and partners.',
                 },
                 {
                   title: 'Operations Administrator',
