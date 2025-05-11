@@ -163,7 +163,15 @@ export default function Home() {
                   companyDesc: 'A prestigious educational institution in Dubai offering comprehensive education from nursery to secondary levels.',
                   location: 'Dubai, United Arab Emirates',
                   period: 'Sep 2017 - Sep 2018',
-                  description: 'Full-time role managing daily operations and administrative tasks in an educational institution.',
+                  description: (
+                    <div className="space-y-2">
+                      <p>Full-time role managing daily operations and administrative tasks in an educational institution.</p>
+                      <div className="ml-6 space-y-2">
+                        <p>• Implemented a centralized communication platform, which boosted information transmission among 65 operations staff, increasing collaboration and transparency.</p>
+                        <p>• Coordinated facility management, including maintenance schedules, cleaning services, security, and school events.</p>
+                      </div>
+                    </div>
+                  ),
                 },
                 {
                   title: 'HR Administrator Assistant',
