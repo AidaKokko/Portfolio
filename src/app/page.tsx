@@ -227,7 +227,15 @@ export default function Home() {
                   companyDesc: 'A USA-based healthcare technology company specializing in medical documentation and healthcare solutions.',
                   location: 'Cebu City, Philippines',
                   period: 'Jan 2009 - Nov 2009',
-                  description: 'Full-time role creating technical documentation and content for healthcare solutions.',
+                  description: (
+                    <div className="space-y-2">
+                      <p>Full-time role creating technical documentation and content for healthcare solutions.</p>
+                      <div className="ml-6 space-y-2">
+                        <p>• Created technical manuals, user guides, and product documentation in collaboration with software developers and software testers.</p>
+                        <p>• Translated complex technical information into clear, user-friendly content for internal and external audiences.</p>
+                      </div>
+                    </div>
+                  ),
                 },
                 {
                   title: 'Market Analyst',
