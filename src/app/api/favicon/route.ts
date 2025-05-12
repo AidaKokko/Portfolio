@@ -4,8 +4,19 @@ import path from 'path';
 
 export async function GET() {
   try {
-    const filePath = path.join(process.cwd(), 'public', 'aida-favicon.ico');
+    const publicDir = path.join(process.cwd(), 'public');
+    const filePath = path.join(publicDir, 'aida-favicon.ico');
     
+    console.log('Current working directory:', process.cwd());
+    console.log('Public directory path:', publicDir);
+    console.log('Favicon file path:', filePath);
+    
+    // Check if public directory exists
+    if (!fs.existsSync(publicDir)) {
+      console.error('Public directory not found at:', publicDir);
+      return new NextResponse('Public directory not found', { status: 404 });
+    }
+
     // Check if file exists
     if (!fs.existsSync(filePath)) {
       console.error('Favicon file not found at:', filePath);
@@ -13,6 +24,7 @@ export async function GET() {
     }
 
     const fileBuffer = fs.readFileSync(filePath);
+    console.log('Successfully read favicon file, size:', fileBuffer.length);
 
     return new NextResponse(fileBuffer, {
       headers: {
