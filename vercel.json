@@ -1,7 +1,7 @@
 {
   "headers": [
     {
-      "source": "/favicon.png",
+      "source": "/favicon.ico",
       "headers": [
         {
           "key": "Cache-Control",
@@ -16,8 +16,20 @@
           "value": "0"
         }
       ]
+    },
+    {
+      "source": "/:path*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
+        }
+      ]
     }
   ],
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "github": {
+    "silent": true
+  }
 } 
