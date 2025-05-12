@@ -10,6 +10,20 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Aida Kokko - Portfolio",
   description: "Operations & Events Professional with international experience",
+  icons: {
+    icon: [
+      {
+        url: "/Black logo.svg",
+        type: "image/svg+xml",
+      }
+    ],
+    apple: [
+      {
+        url: "/Black logo.svg",
+        type: "image/svg+xml",
+      }
+    ],
+  },
 };
 
 export default function RootLayout({
