@@ -9,7 +9,6 @@ export const metadata: Metadata = {
   description: "Welcome to my portfolio website showcasing my work and experience.",
   icons: {
     icon: [
-      { url: '/aida-favicon.ico', sizes: 'any' },
       { url: '/favicon.png', type: 'image/png' }
     ],
     apple: { url: '/favicon.png', type: 'image/png' }
@@ -27,10 +26,8 @@ export default function RootLayout({
         <meta httpEquiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
         <meta httpEquiv="Pragma" content="no-cache" />
         <meta httpEquiv="Expires" content="0" />
-        <link rel="icon" href="/aida-favicon.ico" type="image/x-icon" />
-        <link rel="shortcut icon" href="/aida-favicon.ico" type="image/x-icon" />
-        <link rel="apple-touch-icon" href="/favicon.png" />
         <link rel="icon" type="image/png" href="/favicon.png" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>

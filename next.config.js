@@ -8,23 +8,26 @@ const nextConfig = {
       },
     ],
   },
-  async headers() {
+  async rewrites() {
     return [
       {
-        source: '/aida-favicon.ico',
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'no-store, must-revalidate',
-          },
-        ],
+        source: '/favicon.ico',
+        destination: '/favicon.png',
       },
+    ];
+  },
+  async headers() {
+    return [
       {
         source: '/favicon.png',
         headers: [
           {
             key: 'Cache-Control',
             value: 'no-store, must-revalidate',
+          },
+          {
+            key: 'Content-Type',
+            value: 'image/png',
           },
         ],
       },
