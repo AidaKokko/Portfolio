@@ -23,7 +23,7 @@ const nextConfig = {
         ],
       },
       {
-        source: '/favicon.ico',
+        source: '/favicon/:path*',
         headers: [
           {
             key: 'Cache-Control',
