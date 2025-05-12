@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+// Force cache purge with new deployment
 const nextConfig = {
   images: {
     remotePatterns: [
