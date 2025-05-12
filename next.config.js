@@ -8,10 +8,18 @@ const nextConfig = {
       },
     ],
   },
-  async headers() {
+  async rewrites() {
     return [
       {
         source: '/favicon.ico',
+        destination: '/aida-favicon.ico',
+      },
+    ];
+  },
+  async headers() {
+    return [
+      {
+        source: '/aida-favicon.ico',
         headers: [
           {
             key: 'Cache-Control',
