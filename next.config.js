@@ -11,19 +11,20 @@ const nextConfig = {
   async headers() {
     return [
       {
-        source: '/favicon.ico',
+        source: '/aida-favicon.ico',
         headers: [
           {
             key: 'Cache-Control',
             value: 'no-store, must-revalidate',
           },
+        ],
+      },
+      {
+        source: '/favicon.png',
+        headers: [
           {
-            key: 'Pragma',
-            value: 'no-cache',
-          },
-          {
-            key: 'Expires',
-            value: '0',
+            key: 'Cache-Control',
+            value: 'no-store, must-revalidate',
           },
         ],
       },
