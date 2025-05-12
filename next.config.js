@@ -26,8 +26,12 @@ const nextConfig = {
             value: 'no-store, must-revalidate',
           },
           {
-            key: 'Content-Type',
-            value: 'image/x-icon',
+            key: 'Pragma',
+            value: 'no-cache',
+          },
+          {
+            key: 'Expires',
+            value: '0',
           },
         ],
       },
