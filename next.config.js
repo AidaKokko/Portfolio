@@ -12,14 +12,14 @@ const nextConfig = {
     return [
       {
         source: '/favicon.ico',
-        destination: '/favicon.png',
+        destination: '/aida-favicon.ico',
       },
     ];
   },
   async headers() {
     return [
       {
-        source: '/favicon.png',
+        source: '/aida-favicon.ico',
         headers: [
           {
             key: 'Cache-Control',
@@ -27,7 +27,7 @@ const nextConfig = {
           },
           {
             key: 'Content-Type',
-            value: 'image/png',
+            value: 'image/x-icon',
           },
         ],
       },
