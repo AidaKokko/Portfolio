@@ -22,6 +22,15 @@ const nextConfig = {
           }
         ],
       },
+      {
+        source: '/favicon.ico',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'no-store, must-revalidate'
+          }
+        ],
+      },
     ]
   },
 };
