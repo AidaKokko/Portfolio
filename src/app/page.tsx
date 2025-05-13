@@ -155,7 +155,7 @@ export default function Home() {
                         <p>• Resolved last-minute issues on-site, ensuring seamless experiences for attendees, staff, and partners.</p>
                       </div>
                       <div className="mt-2">
-                        <p className="text-sm text-emerald-400">Tools Used: Microsoft Teams, Eventos Event Management Software, Oxford Abstracts Platform, Microsoft Excel, Canva, Outlook for mass mailing</p>
+                        <p className="text-sm text-purple-400">Tools Used: Microsoft Teams, Eventos Event Management Software, Oxford Abstracts Platform, Microsoft Excel, Canva, Outlook for mass mailing</p>
                       </div>
                     </div>
                   ),
@@ -174,7 +174,7 @@ export default function Home() {
                         <p>• Coordinated facility management, including maintenance schedules, cleaning services, security, and school events.</p>
                       </div>
                       <div className="mt-2">
-                        <p className="text-sm text-emerald-400">Tools Used: Google Cloud, Microsoft Office Suite, Google Calendar, Google Forms, Adobe Illustrator & Photoshop</p>
+                        <p className="text-sm text-purple-400">Tools Used: Google Cloud, Microsoft Office Suite, Google Calendar, Google Forms, Adobe Illustrator & Photoshop</p>
                       </div>
                     </div>
                   ),
@@ -193,7 +193,7 @@ export default function Home() {
                         <p>• Demonstrated discretion, organization, and attention to detail in a fast-paced environment.</p>
                       </div>
                       <div className="mt-2">
-                        <p className="text-sm text-emerald-400">Tools Used: Info-Tech HRM System, Google Forms, Microsoft Office Suite</p>
+                        <p className="text-sm text-purple-400">Tools Used: Info-Tech HRM System, Google Forms, Microsoft Office Suite</p>
                       </div>
                     </div>
                   ),
@@ -212,7 +212,7 @@ export default function Home() {
                         <p>• Ensured high-quality output by performing prepress checks and adhering to color, resolution, and print standards.</p>
                       </div>
                       <div className="mt-2">
-                        <p className="text-sm text-emerald-400">Tools Used: Adobe Creative Suite (Illustrator, PhotoShop, InDesign, PDF editor), Rainbow card printer, Silhouette Studio</p>
+                        <p className="text-sm text-purple-400">Tools Used: Adobe Creative Suite (Illustrator, PhotoShop, InDesign, PDF editor), Rainbow card printer, Silhouette Studio</p>
                       </div>
                     </div>
                   ),
@@ -231,7 +231,7 @@ export default function Home() {
                         <p>• Assisted with phone connectivity issues using SIM card and device activation, network diagnostics, ticketing systems, and network monitoring tools.</p>
                       </div>
                       <div className="mt-2">
-                        <p className="text-sm text-emerald-400">Tools Used: Avaya (Call handling & routing), Siebel CRM (Oracle) for Ticketing, CSG International for Billing, Citrix for remote system access</p>
+                        <p className="text-sm text-purple-400">Tools Used: Avaya (Call handling & routing), Siebel CRM (Oracle) for Ticketing, CSG International for Billing, Citrix for remote system access</p>
                       </div>
                     </div>
                   ),
@@ -250,7 +250,7 @@ export default function Home() {
                         <p>• Translated complex technical information into clear, user-friendly content for internal and external audiences.</p>
                       </div>
                       <div className="mt-2">
-                        <p className="text-sm text-emerald-400">Tools Used: Adobe FrameMaker, Microsoft Word, Adobe Acrobat Professional, SnagIt, Version Control System</p>
+                        <p className="text-sm text-purple-400">Tools Used: Adobe FrameMaker, Microsoft Word, Adobe Acrobat Professional, SnagIt, Version Control System</p>
                       </div>
                     </div>
                   ),
@@ -269,7 +269,7 @@ export default function Home() {
                         <p>• Filter potential leads so that sales representatives can make more sales by calling the right customers.</p>
                       </div>
                       <div className="mt-2">
-                        <p className="text-sm text-emerald-400">Tools Used: Microsoft Excel, Microsoft Access, 6sense cloud-based sales intelligence platform</p>
+                        <p className="text-sm text-purple-400">Tools Used: Microsoft Excel, Microsoft Access, 6sense cloud-based sales intelligence platform</p>
                       </div>
                     </div>
                   ),
