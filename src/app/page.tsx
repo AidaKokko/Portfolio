@@ -193,7 +193,7 @@ export default function Home() {
                         <p>• Demonstrated discretion, organization, and attention to detail in a fast-paced environment.</p>
                       </div>
                       <div className="mt-2">
-                        <p className="text-sm text-emerald-400">Tools Used: HR Management Software, Document Management Systems, Microsoft Office Suite</p>
+                        <p className="text-sm text-emerald-400">Tools Used: Info-Tech HRM System, Google Forms, Microsoft Office Suite</p>
                       </div>
                     </div>
                   ),
