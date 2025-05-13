@@ -174,7 +174,7 @@ export default function Home() {
                         <p>• Coordinated facility management, including maintenance schedules, cleaning services, security, and school events.</p>
                       </div>
                       <div className="mt-2">
-                        <p className="text-sm text-emerald-400">Tools Used: Microsoft Office Suite, School Management Software, Facility Management Systems</p>
+                        <p className="text-sm text-emerald-400">Tools Used: Google Cloud, Microsoft Office Suite, Google Calendar, Google Forms, Adobe Illustrator & Photoshop</p>
                       </div>
                     </div>
                   ),
