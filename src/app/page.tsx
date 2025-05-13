@@ -231,7 +231,7 @@ export default function Home() {
                         <p>• Assisted with phone connectivity issues using SIM card and device activation, network diagnostics, ticketing systems, and network monitoring tools.</p>
                       </div>
                       <div className="mt-2">
-                        <p className="text-sm text-emerald-400">Tools Used: CRM Software, Ticketing Systems, Network Diagnostic Tools, Customer Support Platforms</p>
+                        <p className="text-sm text-emerald-400">Tools Used: Avaya (Call handling & routing), Siebel CRM (Oracle) for Ticketing, CSG International for Billing, Citrix for remote system access</p>
                       </div>
                     </div>
                   ),
