@@ -155,7 +155,7 @@ export default function Home() {
                         <p>• Resolved last-minute issues on-site, ensuring seamless experiences for attendees, staff, and partners.</p>
                       </div>
                       <div className="mt-2">
-                        <p className="text-sm text-emerald-400">Tools Used: Microsoft Teams, Zoom, Event Management Software</p>
+                        <p className="text-sm text-emerald-400">Tools Used: Microsoft Teams, Eventos Event Management Software, Oxford Abstracts Platform, Microsoft Excel, Canva, Outlook for mass mailing</p>
                       </div>
                     </div>
                   ),
