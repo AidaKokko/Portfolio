@@ -212,7 +212,7 @@ export default function Home() {
                         <p>• Ensured high-quality output by performing prepress checks and adhering to color, resolution, and print standards.</p>
                       </div>
                       <div className="mt-2">
-                        <p className="text-sm text-emerald-400">Tools Used: Adobe Creative Suite (Photoshop, Illustrator, InDesign), CorelDRAW, Print Production Software</p>
+                        <p className="text-sm text-emerald-400">Tools Used: Adobe Creative Suite (Illustrator, PhotoShop, InDesign, PDF editor), Rainbow card printer, Silhouette Studio</p>
                       </div>
                     </div>
                   ),
