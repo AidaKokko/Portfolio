@@ -250,7 +250,7 @@ export default function Home() {
                         <p>• Translated complex technical information into clear, user-friendly content for internal and external audiences.</p>
                       </div>
                       <div className="mt-2">
-                        <p className="text-sm text-emerald-400">Tools Used: Microsoft Word, Adobe FrameMaker, MadCap Flare, Version Control Systems</p>
+                        <p className="text-sm text-emerald-400">Tools Used: Adobe FrameMaker, Microsoft Word, Adobe Acrobat Professional, SnagIt, Version Control System</p>
                       </div>
                     </div>
                   ),
@@ -269,7 +269,7 @@ export default function Home() {
                         <p>• Filter potential leads so that sales representatives can make more sales by calling the right customers.</p>
                       </div>
                       <div className="mt-2">
-                        <p className="text-sm text-emerald-400">Tools Used: Market Research Databases, CRM Systems, Microsoft Excel, Data Analysis Tools</p>
+                        <p className="text-sm text-emerald-400">Tools Used: Microsoft Excel, Microsoft Access, 6sense cloud-based sales intelligence platform</p>
                       </div>
                     </div>
                   ),
