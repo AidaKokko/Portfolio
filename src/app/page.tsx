@@ -154,6 +154,9 @@ export default function Home() {
                         <p>• Gained exposure to event planning software and internal collaboration tools.</p>
                         <p>• Resolved last-minute issues on-site, ensuring seamless experiences for attendees, staff, and partners.</p>
                       </div>
+                      <div className="mt-2">
+                        <p className="text-sm text-emerald-400">Tools Used: Microsoft Teams, Zoom, Event Management Software</p>
+                      </div>
                     </div>
                   ),
                 },
@@ -169,6 +172,9 @@ export default function Home() {
                       <div className="ml-6 space-y-2">
                         <p>• Implemented a centralized communication platform, which boosted information transmission among 65 operations staff, increasing collaboration and transparency.</p>
                         <p>• Coordinated facility management, including maintenance schedules, cleaning services, security, and school events.</p>
+                      </div>
+                      <div className="mt-2">
+                        <p className="text-sm text-emerald-400">Tools Used: Microsoft Office Suite, School Management Software, Facility Management Systems</p>
                       </div>
                     </div>
                   ),
@@ -186,6 +192,9 @@ export default function Home() {
                         <p>• Onboarded 50+ new hires by managing documentation collection, including work visas, drug testing, and medical reports, ensuring 100% compliance with Singapore's ministry of manpower regulations and reducing onboarding time by 15%.</p>
                         <p>• Demonstrated discretion, organization, and attention to detail in a fast-paced environment.</p>
                       </div>
+                      <div className="mt-2">
+                        <p className="text-sm text-emerald-400">Tools Used: HR Management Software, Document Management Systems, Microsoft Office Suite</p>
+                      </div>
                     </div>
                   ),
                 },
@@ -201,6 +210,9 @@ export default function Home() {
                       <div className="ml-6 space-y-2">
                         <p>• Designed and prepared visual materials for print and digital formats, including brochures, business cards, flyers, and large-scale signage.</p>
                         <p>• Ensured high-quality output by performing prepress checks and adhering to color, resolution, and print standards.</p>
+                      </div>
+                      <div className="mt-2">
+                        <p className="text-sm text-emerald-400">Tools Used: Adobe Creative Suite (Photoshop, Illustrator, InDesign), CorelDRAW, Print Production Software</p>
                       </div>
                     </div>
                   ),
@@ -218,6 +230,9 @@ export default function Home() {
                         <p>• Analyzed 200+ customer interactions to identify top escalation reasons.</p>
                         <p>• Assisted with phone connectivity issues using SIM card and device activation, network diagnostics, ticketing systems, and network monitoring tools.</p>
                       </div>
+                      <div className="mt-2">
+                        <p className="text-sm text-emerald-400">Tools Used: CRM Software, Ticketing Systems, Network Diagnostic Tools, Customer Support Platforms</p>
+                      </div>
                     </div>
                   ),
                 },
@@ -234,6 +249,9 @@ export default function Home() {
                         <p>• Created technical manuals, user guides, and product documentation in collaboration with software developers and software testers.</p>
                         <p>• Translated complex technical information into clear, user-friendly content for internal and external audiences.</p>
                       </div>
+                      <div className="mt-2">
+                        <p className="text-sm text-emerald-400">Tools Used: Microsoft Word, Adobe FrameMaker, MadCap Flare, Version Control Systems</p>
+                      </div>
                     </div>
                   ),
                 },
@@ -249,6 +267,9 @@ export default function Home() {
                       <div className="ml-6 space-y-2">
                         <p>• Responsible for gathering and analyzing large amounts of customer data pertaining to the company's target market, as well as distributing prospect leads to the sales department.</p>
                         <p>• Filter potential leads so that sales representatives can make more sales by calling the right customers.</p>
+                      </div>
+                      <div className="mt-2">
+                        <p className="text-sm text-emerald-400">Tools Used: Market Research Databases, CRM Systems, Microsoft Excel, Data Analysis Tools</p>
                       </div>
                     </div>
                   ),
