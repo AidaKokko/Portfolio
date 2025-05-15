@@ -11,38 +11,38 @@ const Projects = () => {
       description: "A comprehensive wireframe design for Lahjojen Maailma, showcasing the user interface and experience flow.",
       technologies: ["UI/UX Design", "Wireframing", "User Flow"],
       pdfPath: "/project/Lahjojen Maailma_Wireframe (Final).pdf",
-      thumbnail: "/images/project-thumbnails/wireframe.jpg" // You'll need to add this image
+      thumbnail: "/images/project-thumbnails/wireframe.jpg"
     },
     {
       title: "Returning Buyer Persona",
       description: "Detailed analysis and persona development for returning customers, focusing on user behavior and preferences.",
       technologies: ["User Research", "Persona Development", "Customer Analysis"],
       pdfPath: "/project/Returning Buyer Persona.pdf",
-      thumbnail: "/images/project-thumbnails/returning-buyer.jpg" // You'll need to add this image
+      thumbnail: "/images/project-thumbnails/returning-buyer.jpg"
     },
     {
       title: "New Buyer Persona",
       description: "Comprehensive study of new customer segments, their needs, and how to effectively engage with them.",
       technologies: ["Market Research", "User Segmentation", "Customer Journey"],
       pdfPath: "/project/New Buyer Persona.pdf",
-      thumbnail: "/images/project-thumbnails/new-buyer.jpg" // You'll need to add this image
+      thumbnail: "/images/project-thumbnails/new-buyer.jpg"
     },
     {
       title: "Operations Work Cycle",
       description: "Detailed documentation of operational workflows and processes, ensuring efficient business operations.",
       technologies: ["Process Documentation", "Operations Management", "Workflow Analysis"],
       pdfPath: "/project/Operations Work Cycle.pdf",
-      thumbnail: "/images/project-thumbnails/operations.jpg" // You'll need to add this image
+      thumbnail: "/images/project-thumbnails/operations.jpg"
     }
   ];
 
   return (
     <main className="min-h-screen bg-gray-900">
       <Navbar />
-      <div className="py-24 px-4 sm:px-6 lg:px-8">
+      <div className="pt-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-4xl font-bold text-white mb-8 text-center">My Projects</h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {projects.map((project, index) => (
               <div key={index} className="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <div className="relative h-48 bg-gray-700">
