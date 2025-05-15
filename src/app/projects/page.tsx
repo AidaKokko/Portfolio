@@ -14,6 +14,13 @@ const Projects = () => {
       previewPath: "/images/project-previews/wireframe-preview.jpg"
     },
     {
+      title: "Operations Work Cycle",
+      description: "Detailed documentation of operational workflows and processes, ensuring efficient business operations.",
+      technologies: ["Process Documentation", "Operations Management", "Workflow Analysis"],
+      pdfPath: "/project/Operations Work Cycle.pdf",
+      previewPath: "/images/project-previews/operations-preview.jpg"
+    },
+    {
       title: "Returning Buyer Persona",
       description: "Detailed analysis and persona development for returning customers, focusing on user behavior and preferences.",
       technologies: ["User Research", "Persona Development", "Customer Analysis"],
@@ -26,13 +33,6 @@ const Projects = () => {
       technologies: ["Market Research", "User Segmentation", "Customer Journey"],
       pdfPath: "/project/New Buyer Persona.pdf",
       previewPath: "/images/project-previews/new-buyer-preview.jpg"
-    },
-    {
-      title: "Operations Work Cycle",
-      description: "Detailed documentation of operational workflows and processes, ensuring efficient business operations.",
-      technologies: ["Process Documentation", "Operations Management", "Workflow Analysis"],
-      pdfPath: "/project/Operations Work Cycle.pdf",
-      previewPath: "/images/project-previews/operations-preview.jpg"
     }
   ];
 
