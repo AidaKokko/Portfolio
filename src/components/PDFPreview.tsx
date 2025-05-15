@@ -37,6 +37,7 @@ const PDFPreview: React.FC<PDFPreviewProps> = ({ pdfPath, title, previewPath }) 
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-contain bg-gray-800"
           priority
+          quality={100}
           onLoadingComplete={() => {
             console.log('Image loaded successfully:', previewPath);
             setIsLoading(false);
