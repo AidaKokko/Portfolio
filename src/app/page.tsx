@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Navbar from '@/components/Navbar';
+import Projects from '@/components/Projects';
 import Image from 'next/image';
 import { 
   MusicalNoteIcon, 
@@ -290,6 +291,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Projects Section */}
+      <Projects />
 
       {/* Skills Section */}
       <section id="skills" className="py-24 bg-gray-800">
