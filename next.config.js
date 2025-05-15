@@ -9,6 +9,7 @@ const nextConfig = {
       },
     ],
     unoptimized: true,
+    domains: ['localhost'],
   },
   async headers() {
     return [

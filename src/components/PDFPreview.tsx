@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 interface PDFPreviewProps {
@@ -12,6 +12,10 @@ interface PDFPreviewProps {
 const PDFPreview: React.FC<PDFPreviewProps> = ({ pdfPath, title, previewPath }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(false);
+
+  useEffect(() => {
+    console.log('Loading preview:', previewPath);
+  }, [previewPath]);
 
   return (
     <div className="relative h-48 sm:h-64 bg-gray-700 overflow-hidden">
@@ -33,9 +37,12 @@ const PDFPreview: React.FC<PDFPreviewProps> = ({ pdfPath, title, previewPath }) 
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-contain bg-gray-800"
           priority
-          onLoadingComplete={() => setIsLoading(false)}
+          onLoadingComplete={() => {
+            console.log('Image loaded successfully:', previewPath);
+            setIsLoading(false);
+          }}
           onError={(e) => {
-            console.error('Error loading image:', e);
+            console.error('Error loading image:', previewPath, e);
             setError(true);
             setIsLoading(false);
           }}
