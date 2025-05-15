@@ -2,18 +2,30 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const navigation = [
-  { name: 'About', href: '#about' },
-  { name: 'Experience', href: '#experience' },
+  { name: 'About', href: '/#about' },
+  { name: 'Experience', href: '/#experience' },
   { name: 'Projects', href: '/projects' },
-  { name: 'Skills', href: '#skills' },
-  { name: 'Contact', href: '#contact' },
+  { name: 'Skills', href: '/#skills' },
+  { name: 'Contact', href: '/#contact' },
 ];
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const handleNavigation = (href: string) => {
+    if (href.startsWith('/#')) {
+      // If we're not on the home page, first navigate to home
+      if (pathname !== '/') {
+        window.location.href = href;
+      }
+    }
+    setMobileMenuOpen(false);
+  };
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 bg-gray-900/80 backdrop-blur-sm">
@@ -39,6 +51,7 @@ export default function Navbar() {
               key={item.name}
               href={item.href}
               className="text-sm font-semibold leading-6 text-gray-300 hover:text-white transition-colors font-montserrat"
+              onClick={() => handleNavigation(item.href)}
             >
               {item.name}
             </Link>
@@ -72,7 +85,7 @@ export default function Navbar() {
                       key={item.name}
                       href={item.href}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-300 hover:bg-gray-800 hover:text-white font-montserrat"
-                      onClick={() => setMobileMenuOpen(false)}
+                      onClick={() => handleNavigation(item.href)}
                     >
                       {item.name}
                     </Link>
