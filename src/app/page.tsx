@@ -293,7 +293,9 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <Projects />
+      <section id="projects" className="py-24 bg-gray-800">
+        <Projects />
+      </section>
 
       {/* Skills Section */}
       <section id="skills" className="py-24 bg-gray-800">

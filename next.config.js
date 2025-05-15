@@ -28,10 +28,26 @@ const nextConfig = {
           },
         ],
       },
+      {
+        source: '/project/:path*',
+        headers: [
+          {
+            key: 'Content-Type',
+            value: 'application/pdf',
+          },
+        ],
+      },
     ];
   },
   experimental: {
     serverActions: true,
+  },
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.pdf$/,
+      type: 'asset/resource',
+    });
+    return config;
   },
 };
 
