@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const navigation = [
@@ -16,15 +16,35 @@ const navigation = [
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
 
   const handleNavigation = (href: string) => {
-    if (href.startsWith('/#')) {
-      // If we're not on the home page, first navigate to home
-      if (pathname !== '/') {
-        window.location.href = href;
-      }
-    }
     setMobileMenuOpen(false);
+    
+    if (href.startsWith('/#')) {
+      if (pathname !== '/') {
+        // First navigate to home page
+        router.push('/');
+        // Then scroll to the section after a short delay
+        setTimeout(() => {
+          const section = href.split('#')[1];
+          const element = document.getElementById(section);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 100);
+      } else {
+        // If already on home page, just scroll to section
+        const section = href.split('#')[1];
+        const element = document.getElementById(section);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    } else {
+      // For non-hash links (like /projects), use normal navigation
+      router.push(href);
+    }
   };
 
   return (
@@ -47,14 +67,13 @@ export default function Navbar() {
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
-            <Link
+            <button
               key={item.name}
-              href={item.href}
-              className="text-sm font-semibold leading-6 text-gray-300 hover:text-white transition-colors font-montserrat"
               onClick={() => handleNavigation(item.href)}
+              className="text-sm font-semibold leading-6 text-gray-300 hover:text-white transition-colors font-montserrat"
             >
               {item.name}
-            </Link>
+            </button>
           ))}
         </div>
       </nav>
@@ -81,14 +100,13 @@ export default function Navbar() {
               <div className="-my-6 divide-y divide-gray-700">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
-                    <Link
+                    <button
                       key={item.name}
-                      href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-300 hover:bg-gray-800 hover:text-white font-montserrat"
                       onClick={() => handleNavigation(item.href)}
+                      className="-mx-3 block w-full text-left rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-300 hover:bg-gray-800 hover:text-white font-montserrat"
                     >
                       {item.name}
-                    </Link>
+                    </button>
                   ))}
                 </div>
               </div>
