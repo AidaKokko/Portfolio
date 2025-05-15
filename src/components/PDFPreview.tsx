@@ -31,10 +31,11 @@ const PDFPreview: React.FC<PDFPreviewProps> = ({ pdfPath, title, previewPath }) 
           alt={`Preview of ${title}`}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          className="object-cover"
+          className="object-contain bg-gray-800"
           priority
           onLoadingComplete={() => setIsLoading(false)}
-          onError={() => {
+          onError={(e) => {
+            console.error('Error loading image:', e);
             setError(true);
             setIsLoading(false);
           }}
