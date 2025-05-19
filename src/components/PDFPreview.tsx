@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 
 interface PDFPreviewProps {
@@ -29,11 +29,8 @@ const PDFPreview: React.FC<PDFPreviewProps> = ({ pdfPath, title, previewPath }) 
           className="object-contain bg-gray-800"
           priority
           quality={100}
-          onLoadingComplete={() => {
-            setIsLoading(false);
-          }}
-          onError={(e) => {
-            console.error('Error loading image:', previewPath, e);
+          onLoadingComplete={() => setIsLoading(false)}
+          onError={() => {
             setError(true);
             setIsLoading(false);
           }}
@@ -41,12 +38,12 @@ const PDFPreview: React.FC<PDFPreviewProps> = ({ pdfPath, title, previewPath }) 
         {error && (
           <div className="absolute inset-0 flex items-center justify-center bg-gray-800">
             <div className="text-center p-4">
-              <svg className="w-16 h-16 text-gray-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-12 h-12 sm:w-16 sm:h-16 text-gray-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
               </svg>
               <a
                 href={pdfPath}
-                className="mt-4 inline-block bg-emerald-600 text-white px-4 py-2 rounded-md hover:bg-emerald-700 transition-colors duration-300"
+                className="mt-4 inline-block bg-emerald-600 text-white px-3 sm:px-4 py-2 rounded-md hover:bg-emerald-700 transition-colors duration-300 text-sm sm:text-base"
                 target="_blank"
                 rel="noopener noreferrer"
               >

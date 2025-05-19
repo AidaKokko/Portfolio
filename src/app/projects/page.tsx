@@ -1,11 +1,10 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Navbar from '@/components/Navbar';
 import PDFPreview from '@/components/PDFPreview';
 
 const Projects = () => {
-  const [isLoading, setIsLoading] = useState(true);
   const projects = [
     {
       title: "Lahjojen Maailma Wireframe",
@@ -36,39 +35,6 @@ const Projects = () => {
       previewPath: "/images/project-previews/new-buyer-preview.jpg"
     }
   ];
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 100);
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (isLoading) {
-    return (
-      <div className="min-h-screen bg-gray-900">
-        <Navbar />
-        <div className="pt-24 px-4 sm:px-6 lg:px-8 pb-12">
-          <div className="max-w-7xl mx-auto">
-            <div className="animate-pulse">
-              <div className="h-8 bg-gray-800 rounded w-48 mx-auto mb-8"></div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {[1, 2, 3, 4].map((i) => (
-                  <div key={i} className="bg-gray-800 rounded-lg p-6">
-                    <div className="h-48 bg-gray-700 rounded mb-4"></div>
-                    <div className="h-6 bg-gray-700 rounded w-3/4 mb-4"></div>
-                    <div className="h-4 bg-gray-700 rounded w-full mb-4"></div>
-                    <div className="h-4 bg-gray-700 rounded w-2/3"></div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div className="min-h-screen bg-gray-900">
