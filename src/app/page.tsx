@@ -152,8 +152,9 @@ export default function Home() {
                     <div className="space-y-2">
                       <p>Completed a 4-month internship in a hybrid work environment, gaining valuable industry experience.</p>
                       <div className="ml-6 space-y-2">
-                        <p>• Gained exposure to event planning software and internal collaboration tools.</p>
-                        <p>• Resolved last-minute issues on-site, ensuring seamless experiences for attendees, staff, and partners.</p>
+                        <p>• Collected manuscripts and PowerPoint presentations from speakers from different countries through the Oxford Abstract platform.</p>
+                        <p>• Created the conference cue sheet for six parallel sessions.</p>
+                        <p>• Gained access to the event server, ensuring that everything ran smoothly during conference week.</p>
                       </div>
                       <div className="mt-2">
                         <p className="text-sm text-purple-400">Tools Used: Microsoft Teams, Eventos Event Management Software, Oxford Abstracts Platform, Microsoft Excel, Canva, Outlook for mass mailing</p>
