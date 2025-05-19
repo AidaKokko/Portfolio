@@ -172,8 +172,9 @@ export default function Home() {
                     <div className="space-y-2">
                       <p>Full-time role managing daily operations and administrative tasks in an educational institution.</p>
                       <div className="ml-6 space-y-2">
-                        <p>• Implemented a centralized communication platform, which boosted information transmission among 65 operations staff, increasing collaboration and transparency.</p>
-                        <p>• Coordinated facility management, including maintenance schedules, cleaning services, security, and school events.</p>
+                        <p>• Created a work cycle sheet for operations and modified the school's blueprint, resulting in more efficient operations.</p>
+                        <p>• Created a digital version of the school's booking request form and the cleaners' weekly checklists.</p>
+                        <p>• Created a shared Google Calendar for school events and facility booking requests.</p>
                       </div>
                       <div className="mt-2">
                         <p className="text-sm text-purple-400">Tools Used: Google Cloud, Microsoft Office Suite, Google Calendar, Google Forms, Adobe Illustrator & Photoshop</p>
