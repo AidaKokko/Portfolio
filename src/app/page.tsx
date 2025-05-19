@@ -230,8 +230,9 @@ export default function Home() {
                     <div className="space-y-2">
                       <p>Full-time role providing customer support services in a BPO environment.</p>
                       <div className="ml-6 space-y-2">
-                        <p>• Analyzed 200+ customer interactions to identify top escalation reasons.</p>
-                        <p>• Assisted with phone connectivity issues using SIM card and device activation, network diagnostics, ticketing systems, and network monitoring tools.</p>
+                        <p>• Appointed as FA (floor assist) ever since I was in tier 1 until I reached tier 3.</p>
+                        <p>• One of the top-performing customer service representatives who constantly received 100% QA scorecards.</p>
+                        <p>• Recognized as one of the customer support representatives who has solved 80% of escalation tickets.</p>
                       </div>
                       <div className="mt-2">
                         <p className="text-sm text-purple-400">Tools Used: Avaya for call handling & routing, Siebel CRM (Oracle) for Ticketing, CSG International for Billing, Citrix for remote system access</p>
