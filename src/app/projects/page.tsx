@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Navbar from '@/components/Navbar';
-import PDFPreview from '@/components/PDFPreview';
+import Image from 'next/image';
 
 const Projects = () => {
   const projects = [
@@ -46,13 +46,16 @@ const Projects = () => {
             {projects.map((project, index) => (
               <div 
                 key={`project-${index}`}
-                className="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1 transition-transform duration-300"
+                className="bg-gray-800 rounded-lg shadow-lg overflow-hidden"
               >
-                <div className="relative h-48 sm:h-64 bg-gray-700 overflow-hidden">
-                  <PDFPreview 
-                    pdfPath={project.pdfPath} 
-                    title={project.title} 
-                    previewPath={project.previewPath}
+                <div className="relative h-48 sm:h-64 bg-gray-700">
+                  <Image
+                    src={project.previewPath}
+                    alt={`Preview of ${project.title}`}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-contain bg-gray-800"
+                    priority
                   />
                 </div>
                 <div className="p-4 sm:p-6">
