@@ -48,11 +48,13 @@ const Projects = () => {
                 key={`project-${index}`}
                 className="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1 transition-transform duration-300"
               >
-                <PDFPreview 
-                  pdfPath={project.pdfPath} 
-                  title={project.title} 
-                  previewPath={project.previewPath}
-                />
+                <div className="relative h-48 sm:h-64 bg-gray-700 overflow-hidden">
+                  <PDFPreview 
+                    pdfPath={project.pdfPath} 
+                    title={project.title} 
+                    previewPath={project.previewPath}
+                  />
+                </div>
                 <div className="p-4 sm:p-6">
                   <h2 className="text-xl sm:text-2xl font-semibold text-white mb-2">{project.title}</h2>
                   <p className="text-sm sm:text-base text-gray-300 mb-4">{project.description}</p>

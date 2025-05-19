@@ -14,7 +14,7 @@ const PDFPreview: React.FC<PDFPreviewProps> = ({ pdfPath, title, previewPath }) 
   const [error, setError] = useState(false);
 
   return (
-    <div className="relative h-48 sm:h-64 bg-gray-700 overflow-hidden">
+    <>
       {isLoading && (
         <div className="absolute inset-0 flex items-center justify-center bg-gray-800">
           <div className="animate-pulse w-full h-full bg-gray-700"></div>
@@ -53,7 +53,7 @@ const PDFPreview: React.FC<PDFPreviewProps> = ({ pdfPath, title, previewPath }) 
           </div>
         )}
       </div>
-    </div>
+    </>
   );
 };
 
