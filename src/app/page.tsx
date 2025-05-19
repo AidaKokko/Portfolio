@@ -45,7 +45,7 @@ export default function Home() {
               Creative Generalist
             </p>
             <p className="text-lg text-white font-medium mb-4">
-              Interested in Customer Support | Operations | Coordinator | Event Related Roles
+              Interested in Operations Administrator | Coordinator | Event Related Roles
             </p>
             <p className="text-lg text-gray-400 mb-8 max-w-xl">
               "Attention to detail is my hallmark."
