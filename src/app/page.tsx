@@ -192,8 +192,8 @@ export default function Home() {
                     <div className="space-y-2">
                       <p>Full-time role providing comprehensive HR administrative support in a recruitment firm.</p>
                       <div className="ml-6 space-y-2">
-                        <p>• Onboarded 50+ new hires by managing documentation collection, including work visas, drug testing, and medical reports, ensuring 100% compliance with Singapore's ministry of manpower regulations and reducing onboarding time by 15%.</p>
-                        <p>• Demonstrated discretion, organization, and attention to detail in a fast-paced environment.</p>
+                        <p>• Sealed a subcontract deal with Dragages Singapore Pte Ltd, one of Singapore's largest construction firms.</p>
+                        <p>• Onboarded 50+ construction workers as subcontract workers.</p>
                       </div>
                       <div className="mt-2">
                         <p className="text-sm text-purple-400">Tools Used: Info-Tech HRM System, Google Forms, Microsoft Office Suite</p>
