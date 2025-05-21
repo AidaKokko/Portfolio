@@ -30,7 +30,7 @@ export default function Home() {
           >
             <div className="relative w-56 h-56 mb-8 rounded-full overflow-hidden ring-4 ring-emerald-500 shadow-xl">
               <Image
-                src="/images/Aida.jpg"
+                src="/images/AidaKokko.jpg"
                 alt="Aida Kokko"
                 width={224}
                 height={224}
