@@ -52,6 +52,16 @@ const Projects = () => {
                 key={`project-${index}`}
                 className="relative flex flex-col gap-y-3 rounded-lg border border-gray-700 bg-gray-800 p-6 shadow-sm hover:shadow-md transition-all hover:border-emerald-500"
               >
+                <div className="relative h-48 sm:h-64 bg-gray-700 rounded-lg overflow-hidden mb-4">
+                  <Image
+                    src={project.previewPath}
+                    alt={`Preview of ${project.title}`}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-contain bg-gray-800"
+                    priority={index < 2}
+                  />
+                </div>
                 <h3 className="text-lg font-semibold leading-6 text-emerald-400">{project.title}</h3>
                 <p className="text-sm text-gray-300">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mt-2">
