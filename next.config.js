@@ -37,6 +37,10 @@ const nextConfig = {
             key: 'Content-Type',
             value: 'application/pdf',
           },
+          {
+            key: 'Content-Disposition',
+            value: 'inline',
+          },
         ],
       },
     ];

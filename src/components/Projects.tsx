@@ -109,9 +109,10 @@ const Projects = () => {
               </button>
             </div>
             <iframe
-              src={`${selectedPdf}#toolbar=0`}
+              src={`${selectedPdf}#toolbar=0&navpanes=0&scrollbar=0`}
               className="w-full h-full"
               title="PDF Preview"
+              style={{ border: 'none' }}
             />
           </div>
         </div>
