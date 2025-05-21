@@ -7,32 +7,32 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "Lahjojen Maailma Wireframe",
-      description: "A comprehensive wireframe design for Lahjojen Maailma, showcasing the user interface and experience flow.",
-      technologies: ["UI/UX Design", "Wireframing", "User Flow"],
-      pdfPath: "/project/Lahjojen Maailma_Wireframe (Final).pdf",
-      previewPath: "/images/project-previews/wireframe-preview.jpg"
+      title: 'Operations Management',
+      description: 'A comprehensive analysis of operations management processes and improvements.',
+      technologies: ['Process Analysis', 'Workflow Optimization', 'Documentation'],
+      pdfPath: '/project/Operations%20Management.pdf',
+      previewPath: '/images/project-previews/operations-preview.jpg'
     },
     {
-      title: "Operations Work Cycle",
-      description: "Detailed documentation of operational workflows and processes, ensuring efficient business operations.",
-      technologies: ["Process Documentation", "Operations Management", "Workflow Analysis"],
-      pdfPath: "/project/Operations Work Cycle.pdf",
-      previewPath: "/images/project-previews/operations-preview.jpg"
+      title: 'Wireframe Design',
+      description: 'UI/UX wireframe designs for a mobile application interface.',
+      technologies: ['Figma', 'UI Design', 'User Experience'],
+      pdfPath: '/project/Wireframe%20Design.pdf',
+      previewPath: '/images/project-previews/wireframe-preview.jpg'
     },
     {
-      title: "Returning Buyer Persona",
-      description: "Detailed analysis and persona development for returning customers, focusing on user behavior and preferences.",
-      technologies: ["User Research", "Persona Development", "Customer Analysis"],
-      pdfPath: "/project/Returning Buyer Persona.pdf",
-      previewPath: "/images/project-previews/returning-buyer-preview.jpg"
+      title: 'Returning Buyer Persona',
+      description: 'Detailed analysis of returning buyer behavior and preferences.',
+      technologies: ['Market Research', 'User Behavior', 'Data Analysis'],
+      pdfPath: '/project/Returning%20Buyer%20Persona.pdf',
+      previewPath: '/images/project-previews/returning-buyer-preview.jpg'
     },
     {
-      title: "New Buyer Persona",
-      description: "Comprehensive study of new customer segments, their needs, and how to effectively engage with them.",
-      technologies: ["Market Research", "User Segmentation", "Customer Journey"],
-      pdfPath: "/project/New Buyer Persona.pdf",
-      previewPath: "/images/project-previews/new-buyer-preview.jpg"
+      title: 'New Buyer Persona',
+      description: 'Comprehensive study of new buyer demographics and motivations.',
+      technologies: ['Market Research', 'User Behavior', 'Data Analysis'],
+      pdfPath: '/project/New%20Buyer%20Persona.pdf',
+      previewPath: '/images/project-previews/new-buyer-preview.jpg'
     }
   ];
 
@@ -42,44 +42,46 @@ const Projects = () => {
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base font-semibold leading-7 text-emerald-400">Projects</h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Professional Work
+            Featured Work
+          </p>
+          <p className="mt-6 text-lg leading-8 text-gray-300">
+            A collection of my professional projects and case studies.
           </p>
         </div>
+
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-2">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-2">
             {projects.map((project, index) => (
               <div
-                key={`project-${index}`}
-                className="relative flex flex-col gap-y-3 rounded-lg border border-gray-700 bg-gray-800 p-6 shadow-sm hover:shadow-md transition-all hover:border-emerald-500"
+                key={project.title}
+                className="flex flex-col bg-gray-900 rounded-lg shadow-sm hover:shadow-md transition-shadow border border-gray-700 hover:border-emerald-500 overflow-hidden"
               >
-                <div className="relative h-48 sm:h-64 bg-gray-700 rounded-lg overflow-hidden mb-4">
+                <div className="relative h-48 w-full">
                   <Image
                     src={project.previewPath}
-                    alt={`Preview of ${project.title}`}
+                    alt={project.title}
                     fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    className="object-contain bg-gray-800"
-                    priority={index < 2}
+                    className="object-cover"
                     quality={100}
                     loading={index < 2 ? "eager" : "lazy"}
                   />
                 </div>
-                <h3 className="text-lg font-semibold leading-6 text-emerald-400">{project.title}</h3>
-                <p className="text-sm text-gray-300">{project.description}</p>
-                <div className="flex flex-wrap gap-2 mt-2">
-                  {project.technologies.map((tech, techIndex) => (
-                    <span
-                      key={`tech-${techIndex}`}
-                      className="px-2 py-1 bg-emerald-500/20 text-emerald-400 rounded-full text-xs"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-                <div className="flex gap-4 mt-4">
+                <div className="flex flex-col flex-grow p-6">
+                  <h3 className="text-lg font-semibold text-white mb-2">{project.title}</h3>
+                  <p className="text-gray-300 mb-4 flex-grow">{project.description}</p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.technologies.map((tech) => (
+                      <span
+                        key={tech}
+                        className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-900 text-emerald-300"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                   <button
                     onClick={() => setSelectedPdf(project.pdfPath)}
-                    className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-emerald-600 hover:bg-emerald-700 rounded-md transition-colors duration-200"
+                    className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-emerald-600 hover:bg-emerald-700 rounded-lg transition-colors duration-200"
                   >
                     View PDF
                   </button>
@@ -92,24 +94,24 @@ const Projects = () => {
 
       {/* PDF Preview Modal */}
       {selectedPdf && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80">
-          <div className="relative w-full h-full max-w-4xl max-h-[90vh] bg-white rounded-lg overflow-hidden">
-            <div className="absolute top-4 right-4 z-10 flex gap-2">
+        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
+          <div className="bg-gray-900 rounded-lg shadow-xl w-full max-w-4xl h-[80vh] flex flex-col">
+            <div className="flex justify-between items-center p-4 border-b border-gray-700">
+              <h3 className="text-lg font-semibold text-white">PDF Preview</h3>
               <button
                 onClick={() => setSelectedPdf(null)}
-                className="p-2 text-gray-600 hover:text-gray-900 bg-white rounded-full shadow-lg"
+                className="text-gray-400 hover:text-white"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
+                Close
               </button>
             </div>
-            <iframe
-              src={`${selectedPdf}#toolbar=0&navpanes=0&scrollbar=0`}
-              className="w-full h-full"
-              title="PDF Preview"
-              style={{ border: 'none' }}
-            />
+            <div className="flex-grow p-4">
+              <iframe
+                src={selectedPdf}
+                className="w-full h-full rounded-lg"
+                title="PDF Preview"
+              />
+            </div>
           </div>
         </div>
       )}
