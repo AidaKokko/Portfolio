@@ -10,28 +10,28 @@ const Projects = () => {
       title: 'Operations Work Cycle',
       description: 'Detailed documentation of operational workflows and processes, ensuring efficient business operations.',
       technologies: ['Process Documentation', 'Operations Management', 'Workflow Analysis'],
-      pdfPath: '/project/Operations Work Cycle.pdf',
+      pdfPath: encodeURIComponent('/project/Operations Work Cycle.pdf'),
       previewPath: '/images/project-previews/operations-preview.jpg'
     },
     {
       title: 'Lahjojen Maailma Wireframe',
       description: 'A comprehensive wireframe design for Lahjojen Maailma, showcasing the user interface and experience flow.',
       technologies: ['UI/UX Design', 'Wireframing', 'User Flow'],
-      pdfPath: '/project/Lahjojen Maailma_Wireframe (Final).pdf',
+      pdfPath: encodeURIComponent('/project/Lahjojen Maailma_Wireframe (Final).pdf'),
       previewPath: '/images/project-previews/wireframe-preview.jpg'
     },
     {
       title: 'Returning Buyer Persona',
       description: 'Detailed analysis of returning buyer behavior and preferences.',
       technologies: ['Market Research', 'User Behavior', 'Data Analysis'],
-      pdfPath: '/project/Returning Buyer Persona.pdf',
+      pdfPath: encodeURIComponent('/project/Returning Buyer Persona.pdf'),
       previewPath: '/images/project-previews/returning-buyer-preview.jpg'
     },
     {
       title: 'New Buyer Persona',
       description: 'Comprehensive study of new buyer demographics and motivations.',
       technologies: ['Market Research', 'User Behavior', 'Data Analysis'],
-      pdfPath: '/project/New Buyer Persona.pdf',
+      pdfPath: encodeURIComponent('/project/New Buyer Persona.pdf'),
       previewPath: '/images/project-previews/new-buyer-preview.jpg'
     }
   ];
