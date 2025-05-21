@@ -1,40 +1,60 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
 const Projects = () => {
   const [selectedPdf, setSelectedPdf] = useState<string | null>(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   const projects = [
     {
       title: 'Operations Work Cycle',
       description: 'Detailed documentation of operational workflows and processes, ensuring efficient business operations.',
       technologies: ['Process Documentation', 'Operations Management', 'Workflow Analysis'],
-      pdfPath: encodeURIComponent('/project/Operations Work Cycle.pdf'),
+      pdfPath: '/project/Operations Work Cycle.pdf',
       previewPath: '/images/project-previews/operations-preview.jpg'
     },
     {
       title: 'Lahjojen Maailma Wireframe',
       description: 'A comprehensive wireframe design for Lahjojen Maailma, showcasing the user interface and experience flow.',
       technologies: ['UI/UX Design', 'Wireframing', 'User Flow'],
-      pdfPath: encodeURIComponent('/project/Lahjojen Maailma_Wireframe (Final).pdf'),
+      pdfPath: '/project/Lahjojen Maailma_Wireframe (Final).pdf',
       previewPath: '/images/project-previews/wireframe-preview.jpg'
     },
     {
       title: 'Returning Buyer Persona',
       description: 'Detailed analysis of returning buyer behavior and preferences.',
       technologies: ['Market Research', 'User Behavior', 'Data Analysis'],
-      pdfPath: encodeURIComponent('/project/Returning Buyer Persona.pdf'),
+      pdfPath: '/project/Returning Buyer Persona.pdf',
       previewPath: '/images/project-previews/returning-buyer-preview.jpg'
     },
     {
       title: 'New Buyer Persona',
       description: 'Comprehensive study of new buyer demographics and motivations.',
       technologies: ['Market Research', 'User Behavior', 'Data Analysis'],
-      pdfPath: encodeURIComponent('/project/New Buyer Persona.pdf'),
+      pdfPath: '/project/New Buyer Persona.pdf',
       previewPath: '/images/project-previews/new-buyer-preview.jpg'
     }
   ];
+
+  const handlePdfClick = (pdfPath: string) => {
+    if (isMobile) {
+      window.open(pdfPath, '_blank');
+    } else {
+      setSelectedPdf(pdfPath);
+    }
+  };
 
   return (
     <section id="projects" className="py-24 bg-gray-800">
@@ -80,7 +100,7 @@ const Projects = () => {
                     ))}
                   </div>
                   <button
-                    onClick={() => setSelectedPdf(project.pdfPath)}
+                    onClick={() => handlePdfClick(project.pdfPath)}
                     className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-emerald-600 hover:bg-emerald-700 rounded-lg transition-colors duration-200"
                   >
                     View PDF
@@ -92,8 +112,8 @@ const Projects = () => {
         </div>
       </div>
 
-      {/* PDF Preview Modal */}
-      {selectedPdf && (
+      {/* PDF Preview Modal - Only for desktop */}
+      {selectedPdf && !isMobile && (
         <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
           <div className="bg-gray-900 rounded-lg shadow-xl w-full max-w-4xl h-[80vh] flex flex-col">
             <div className="flex justify-between items-center p-4 border-b border-gray-700">
