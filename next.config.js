@@ -42,7 +42,11 @@ const nextConfig = {
           },
           {
             key: 'Content-Disposition',
-            value: 'inline',
+            value: 'inline; filename=":path"',
+          },
+          {
+            key: 'X-Content-Type-Options',
+            value: 'nosniff',
           },
           {
             key: 'Cache-Control',
@@ -67,7 +71,11 @@ const nextConfig = {
           },
           {
             key: 'Content-Disposition',
-            value: 'inline',
+            value: 'inline; filename=":path"',
+          },
+          {
+            key: 'X-Content-Type-Options',
+            value: 'nosniff',
           },
           {
             key: 'Cache-Control',
