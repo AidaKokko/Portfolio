@@ -43,6 +43,23 @@ const nextConfig = {
           },
         ],
       },
+      {
+        source: '/images/Aida.jpg',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'no-store, must-revalidate',
+          },
+          {
+            key: 'Pragma',
+            value: 'no-cache',
+          },
+          {
+            key: 'Expires',
+            value: '0',
+          },
+        ],
+      },
     ];
   },
   webpack: (config) => {
