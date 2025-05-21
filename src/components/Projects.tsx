@@ -83,13 +83,6 @@ const Projects = () => {
                   >
                     View PDF
                   </button>
-                  <a
-                    href={project.pdfPath}
-                    download
-                    className="inline-flex items-center px-4 py-2 text-sm font-medium text-emerald-400 border border-emerald-400 hover:bg-emerald-400/10 rounded-md transition-colors duration-200"
-                  >
-                    Download
-                  </a>
                 </div>
               </div>
             ))}
@@ -102,15 +95,6 @@ const Projects = () => {
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80">
           <div className="relative w-full h-full max-w-4xl max-h-[90vh] bg-white rounded-lg overflow-hidden">
             <div className="absolute top-4 right-4 z-10 flex gap-2">
-              <a
-                href={selectedPdf}
-                download
-                className="p-2 text-gray-600 hover:text-gray-900 bg-white rounded-full shadow-lg"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                </svg>
-              </a>
               <button
                 onClick={() => setSelectedPdf(null)}
                 className="p-2 text-gray-600 hover:text-gray-900 bg-white rounded-full shadow-lg"
