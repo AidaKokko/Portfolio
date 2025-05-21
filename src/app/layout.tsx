@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
-const montserrat = Montserrat({ 
+const inter = Inter({ 
   subsets: ["latin"],
   display: 'swap',
 });
@@ -22,7 +23,12 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className={`${montserrat.className} bg-gray-900 text-white`}>{children}</body>
+      <body className={`${inter.className} bg-gray-900 text-white`}>
+        {children}
+        {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
+          <GoogleAnalytics GA_MEASUREMENT_ID={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
+        )}
+      </body>
     </html>
   );
 }
