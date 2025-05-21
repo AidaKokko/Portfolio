@@ -10,6 +10,9 @@ const nextConfig = {
     ],
     unoptimized: true,
     domains: ['localhost'],
+    dangerouslyAllowSVG: true,
+    contentDispositionType: 'attachment',
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
   async headers() {
     return [
@@ -44,7 +47,7 @@ const nextConfig = {
         ],
       },
       {
-        source: '/images/Aida.jpg',
+        source: '/images/:path*',
         headers: [
           {
             key: 'Cache-Control',

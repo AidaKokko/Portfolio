@@ -60,6 +60,8 @@ const Projects = () => {
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-contain bg-gray-800"
                     priority={index < 2}
+                    quality={100}
+                    loading={index < 2 ? "eager" : "lazy"}
                   />
                 </div>
                 <h3 className="text-lg font-semibold leading-6 text-emerald-400">{project.title}</h3>
