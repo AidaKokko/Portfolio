@@ -10,28 +10,28 @@ const Projects = () => {
       title: 'Operations Management',
       description: 'A comprehensive analysis of operations management processes and improvements.',
       technologies: ['Process Analysis', 'Workflow Optimization', 'Documentation'],
-      pdfPath: '/project/Operations%20Management.pdf',
+      pdfPath: '/project/Operations Management.pdf',
       previewPath: '/images/project-previews/operations-preview.jpg'
     },
     {
       title: 'Wireframe Design',
       description: 'UI/UX wireframe designs for a mobile application interface.',
       technologies: ['Figma', 'UI Design', 'User Experience'],
-      pdfPath: '/project/Wireframe%20Design.pdf',
+      pdfPath: '/project/Wireframe Design.pdf',
       previewPath: '/images/project-previews/wireframe-preview.jpg'
     },
     {
       title: 'Returning Buyer Persona',
       description: 'Detailed analysis of returning buyer behavior and preferences.',
       technologies: ['Market Research', 'User Behavior', 'Data Analysis'],
-      pdfPath: '/project/Returning%20Buyer%20Persona.pdf',
+      pdfPath: '/project/Returning Buyer Persona.pdf',
       previewPath: '/images/project-previews/returning-buyer-preview.jpg'
     },
     {
       title: 'New Buyer Persona',
       description: 'Comprehensive study of new buyer demographics and motivations.',
       technologies: ['Market Research', 'User Behavior', 'Data Analysis'],
-      pdfPath: '/project/New%20Buyer%20Persona.pdf',
+      pdfPath: '/project/New Buyer Persona.pdf',
       previewPath: '/images/project-previews/new-buyer-preview.jpg'
     }
   ];
@@ -107,8 +107,8 @@ const Projects = () => {
             </div>
             <div className="flex-grow p-4">
               <iframe
-                src={selectedPdf}
-                className="w-full h-full rounded-lg"
+                src={`${selectedPdf}#toolbar=0&navpanes=0`}
+                className="w-full h-full rounded-lg bg-white"
                 title="PDF Preview"
               />
             </div>
