@@ -106,11 +106,23 @@ const Projects = () => {
               </button>
             </div>
             <div className="flex-grow p-4">
-              <iframe
-                src={`${selectedPdf}#toolbar=0&navpanes=0`}
+              <object
+                data={selectedPdf}
+                type="application/pdf"
                 className="w-full h-full rounded-lg bg-white"
-                title="PDF Preview"
-              />
+              >
+                <p className="text-white text-center p-4">
+                  Unable to display PDF file. 
+                  <a 
+                    href={selectedPdf} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-emerald-400 hover:text-emerald-300 ml-2"
+                  >
+                    Download instead
+                  </a>
+                </p>
+              </object>
             </div>
           </div>
         </div>
