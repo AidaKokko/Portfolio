@@ -34,7 +34,7 @@ export default function Home() {
                 alt="Aida Kokko"
                 width={224}
                 height={224}
-                className="object-cover object-center w-full h-full scale-150"
+                className="object-cover object-center w-full h-full scale-125"
                 priority
               />
             </div>
