@@ -25,9 +25,7 @@ export default function RootLayout({
       </head>
       <body className={`${inter.className} bg-gray-900 text-white`}>
         {children}
-        {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
-          <GoogleAnalytics GA_MEASUREMENT_ID={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
-        )}
+        <GoogleAnalytics />
       </body>
     </html>
   );
