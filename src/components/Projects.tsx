@@ -56,12 +56,12 @@ const Projects = () => {
                 key={project.title}
                 className="flex flex-col bg-gray-900 rounded-lg shadow-sm hover:shadow-md transition-shadow border border-gray-700 hover:border-emerald-500 overflow-hidden"
               >
-                <div className="relative h-48 w-full bg-gray-800">
+                <div className="relative h-64 w-full bg-gray-800">
                   <Image
                     src={project.previewPath}
                     alt={project.title}
                     fill
-                    className="object-contain p-2"
+                    className="object-contain p-6"
                     quality={100}
                     loading={index < 2 ? "eager" : "lazy"}
                   />
