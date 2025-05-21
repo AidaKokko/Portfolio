@@ -7,17 +7,17 @@ const Projects = () => {
 
   const projects = [
     {
-      title: 'Operations Management',
-      description: 'A comprehensive analysis of operations management processes and improvements.',
-      technologies: ['Process Analysis', 'Workflow Optimization', 'Documentation'],
-      pdfPath: '/project/Operations Management.pdf',
+      title: 'Operations Work Cycle',
+      description: 'Detailed documentation of operational workflows and processes, ensuring efficient business operations.',
+      technologies: ['Process Documentation', 'Operations Management', 'Workflow Analysis'],
+      pdfPath: '/project/Operations Work Cycle.pdf',
       previewPath: '/images/project-previews/operations-preview.jpg'
     },
     {
-      title: 'Wireframe Design',
-      description: 'UI/UX wireframe designs for a mobile application interface.',
-      technologies: ['Figma', 'UI Design', 'User Experience'],
-      pdfPath: '/project/Wireframe Design.pdf',
+      title: 'Lahjojen Maailma Wireframe',
+      description: 'A comprehensive wireframe design for Lahjojen Maailma, showcasing the user interface and experience flow.',
+      technologies: ['UI/UX Design', 'Wireframing', 'User Flow'],
+      pdfPath: '/project/Lahjojen Maailma_Wireframe (Final).pdf',
       previewPath: '/images/project-previews/wireframe-preview.jpg'
     },
     {
