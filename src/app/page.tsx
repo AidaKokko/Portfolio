@@ -53,11 +53,10 @@ export default function Home() {
             <div className="flex gap-4">
               <a
                 href="/files/Aida Kokko-CV.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
+                download="Aida_Kokko_CV.pdf"
                 className="inline-flex items-center px-6 py-3 text-base font-medium text-white bg-emerald-600 hover:bg-emerald-700 rounded-lg transition-colors duration-200 shadow-md"
               >
-                View CV
+                Download CV
               </a>
             </div>
           </motion.div>
