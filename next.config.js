@@ -42,7 +42,7 @@ const nextConfig = {
           },
           {
             key: 'Content-Disposition',
-            value: 'inline',
+            value: 'inline; filename=":path"',
           },
           {
             key: 'X-Content-Type-Options',

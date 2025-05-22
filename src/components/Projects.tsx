@@ -49,14 +49,10 @@ const Projects = () => {
   ];
 
   const handlePdfClick = (pdfPath: string) => {
-    if (isMobile) {
-      // For mobile, open in a new tab with specific headers
-      const url = new URL(pdfPath, window.location.origin);
-      url.searchParams.set('view', 'inline');
-      window.open(url.toString(), '_blank');
-    } else {
-      setSelectedPdf(pdfPath);
-    }
+    // Always open in a new tab with inline viewing
+    const url = new URL(pdfPath, window.location.origin);
+    url.searchParams.set('view', 'inline');
+    window.open(url.toString(), '_blank', 'noopener,noreferrer');
   };
 
   return (
