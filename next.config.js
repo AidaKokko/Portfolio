@@ -60,6 +60,10 @@ const nextConfig = {
             key: 'Expires',
             value: '0',
           },
+          {
+            key: 'Accept-Ranges',
+            value: 'bytes',
+          },
         ],
       },
       {

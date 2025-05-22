@@ -49,10 +49,14 @@ const Projects = () => {
   ];
 
   const handlePdfClick = (pdfPath: string) => {
-    // Always open in a new tab with inline viewing
-    const url = new URL(pdfPath, window.location.origin);
-    url.searchParams.set('view', 'inline');
-    window.open(url.toString(), '_blank', 'noopener,noreferrer');
+    if (isMobile) {
+      // For mobile, open in a new tab with specific headers
+      const url = new URL(pdfPath, window.location.origin);
+      url.searchParams.set('view', 'inline');
+      window.open(url.toString(), '_blank', 'noopener,noreferrer');
+    } else {
+      setSelectedPdf(pdfPath);
+    }
   };
 
   return (
@@ -117,12 +121,22 @@ const Projects = () => {
           <div className="bg-gray-900 rounded-lg shadow-xl w-full max-w-4xl h-[80vh] flex flex-col">
             <div className="flex justify-between items-center p-4 border-b border-gray-700">
               <h3 className="text-lg font-semibold text-white">PDF Preview</h3>
-              <button
-                onClick={() => setSelectedPdf(null)}
-                className="text-gray-400 hover:text-white"
-              >
-                Close
-              </button>
+              <div className="flex items-center gap-4">
+                <a
+                  href={`${selectedPdf}?view=inline`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-emerald-400 hover:text-emerald-300"
+                >
+                  Open in new tab
+                </a>
+                <button
+                  onClick={() => setSelectedPdf(null)}
+                  className="text-gray-400 hover:text-white"
+                >
+                  Close
+                </button>
+              </div>
             </div>
             <div className="flex-grow p-4">
               <iframe
