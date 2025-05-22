@@ -64,6 +64,10 @@ const nextConfig = {
             key: 'Accept-Ranges',
             value: 'bytes',
           },
+          {
+            key: 'Access-Control-Allow-Origin',
+            value: '*',
+          },
         ],
       },
       {

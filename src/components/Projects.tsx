@@ -50,10 +50,15 @@ const Projects = () => {
 
   const handlePdfClick = (pdfPath: string) => {
     if (isMobile) {
-      // For mobile, open in a new tab with specific headers
-      const url = new URL(pdfPath, window.location.origin);
-      url.searchParams.set('view', 'inline');
-      window.open(url.toString(), '_blank', 'noopener,noreferrer');
+      // For mobile, use a direct link with inline viewing
+      const link = document.createElement('a');
+      link.href = pdfPath;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.setAttribute('data-inline', 'true');
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
     } else {
       setSelectedPdf(pdfPath);
     }
@@ -123,7 +128,7 @@ const Projects = () => {
               <h3 className="text-lg font-semibold text-white">PDF Preview</h3>
               <div className="flex items-center gap-4">
                 <a
-                  href={`${selectedPdf}?view=inline`}
+                  href={selectedPdf}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-emerald-400 hover:text-emerald-300"
