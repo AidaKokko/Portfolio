@@ -42,7 +42,7 @@ const nextConfig = {
           },
           {
             key: 'Content-Disposition',
-            value: 'inline; filename=":path"',
+            value: 'inline',
           },
           {
             key: 'X-Content-Type-Options',
@@ -71,7 +71,7 @@ const nextConfig = {
           },
           {
             key: 'Content-Disposition',
-            value: 'inline; filename=":path"',
+            value: 'attachment; filename=":path"',
           },
           {
             key: 'X-Content-Type-Options',
