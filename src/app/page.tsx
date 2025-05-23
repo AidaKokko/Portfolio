@@ -357,7 +357,10 @@ export default function Home() {
                 'Administrative Support',
                 'Technical Writing',
                 'Proofreading',
-                'Customer Service'
+                'Customer Service',
+                'Time Management',
+                'Creative Problem Solving',
+                'Adaptability'
               ].map((skill) => (
                 <div
                   key={skill}
