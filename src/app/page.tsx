@@ -13,8 +13,44 @@ import {
   ArrowPathIcon,
   FireIcon
 } from '@heroicons/react/24/outline';
+import { useState, useEffect } from 'react';
 
 export default function Home() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  const handleCvClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    const cvUrl = '/files/Aida Kokko-CV.pdf';
+    
+    if (isMobile) {
+      // For mobile devices, create a direct link with specific attributes
+      const link = document.createElement('a');
+      link.href = cvUrl;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.setAttribute('type', 'application/pdf');
+      link.setAttribute('download', ''); // This helps prevent download prompt
+      link.setAttribute('data-inline', 'true');
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } else {
+      // For desktop, open in new tab
+      window.open(cvUrl, '_blank');
+    }
+  };
+
   return (
     <main className="min-h-screen bg-gray-900 text-white">
       <Navbar />
@@ -52,10 +88,12 @@ export default function Home() {
             </p>
             <div className="flex gap-4">
               <a
-                href="/files/Aida Kokko-CV.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/view-cv"
                 className="inline-flex items-center px-6 py-3 text-base font-medium text-white bg-emerald-600 hover:bg-emerald-700 rounded-lg transition-colors duration-200 shadow-md"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = '/view-cv';
+                }}
               >
                 View CV
               </a>
@@ -315,14 +353,11 @@ export default function Home() {
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 mb-12">
               {[
                 'Operations Management',
-                'Event Coordination',
                 'Cross-cultural Communication',
-                'Project Management',
                 'Administrative Support',
                 'Technical Writing',
                 'Proofreading',
-                'Market Analysis',
-                'Customer Service',
+                'Customer Service'
               ].map((skill) => (
                 <div
                   key={skill}
@@ -494,4 +529,4 @@ export default function Home() {
       </section>
     </main>
   );
-}
+} 
