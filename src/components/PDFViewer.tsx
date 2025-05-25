@@ -18,11 +18,13 @@ export default function PDFViewer() {
     return (
       <div className="w-full h-[calc(100vh-12rem)] flex flex-col items-center justify-center bg-gray-700 rounded-lg p-4">
         <p className="text-white mb-4 text-center">
-          To view your CV on mobile, please click the button below:
+          Click below to view your CV:
         </p>
         <div className="space-y-4 w-full max-w-sm">
           <a
-            href="/api/cv"
+            href="/files/Aida Kokko-CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="block w-full px-6 py-3 bg-emerald-600 text-white text-center rounded-lg hover:bg-emerald-700 transition-colors"
           >
             View CV
@@ -34,7 +36,7 @@ export default function PDFViewer() {
 
   return (
     <iframe
-      src="/api/cv"
+      src="/files/Aida Kokko-CV.pdf"
       className="w-full h-[calc(100vh-12rem)] rounded-lg"
       title="Aida Kokko CV"
     />
