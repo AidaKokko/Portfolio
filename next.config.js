@@ -42,35 +42,11 @@ const nextConfig = {
           },
           {
             key: 'Content-Disposition',
-            value: 'inline; filename=":path"',
-          },
-          {
-            key: 'X-Content-Type-Options',
-            value: 'nosniff',
+            value: 'inline',
           },
           {
             key: 'Cache-Control',
-            value: 'public, max-age=0, must-revalidate',
-          },
-          {
-            key: 'Pragma',
-            value: 'no-cache',
-          },
-          {
-            key: 'Expires',
-            value: '0',
-          },
-          {
-            key: 'Accept-Ranges',
-            value: 'bytes',
-          },
-          {
-            key: 'Access-Control-Allow-Origin',
-            value: '*',
-          },
-          {
-            key: 'X-Frame-Options',
-            value: 'SAMEORIGIN',
+            value: 'public, max-age=31536000, immutable',
           },
         ],
       },
@@ -83,31 +59,11 @@ const nextConfig = {
           },
           {
             key: 'Content-Disposition',
-            value: 'inline; filename=":path"',
-          },
-          {
-            key: 'X-Content-Type-Options',
-            value: 'nosniff',
+            value: 'inline',
           },
           {
             key: 'Cache-Control',
-            value: 'no-store, must-revalidate',
-          },
-          {
-            key: 'Pragma',
-            value: 'no-cache',
-          },
-          {
-            key: 'Expires',
-            value: '0',
-          },
-          {
-            key: 'Accept-Ranges',
-            value: 'bytes',
-          },
-          {
-            key: 'Access-Control-Allow-Origin',
-            value: '*',
+            value: 'public, max-age=31536000, immutable',
           },
         ],
       },
