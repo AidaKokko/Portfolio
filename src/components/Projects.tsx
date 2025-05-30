@@ -49,20 +49,7 @@ const Projects = () => {
   ];
 
   const handlePdfClick = (pdfPath: string) => {
-    if (isMobile) {
-      // For mobile, use a direct link with inline viewing
-      const link = document.createElement('a');
-      link.href = pdfPath;
-      link.target = '_blank';
-      link.rel = 'noopener noreferrer';
-      link.setAttribute('data-inline', 'true');
-      link.setAttribute('type', 'application/pdf');
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    } else {
-      setSelectedPdf(pdfPath);
-    }
+    setSelectedPdf(pdfPath);
   };
 
   return (
@@ -121,33 +108,22 @@ const Projects = () => {
         </div>
       </div>
 
-      {/* PDF Preview Modal - Only for desktop */}
-      {selectedPdf && !isMobile && (
+      {/* PDF Preview Modal */}
+      {selectedPdf && (
         <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
           <div className="bg-gray-900 rounded-lg shadow-xl w-full max-w-4xl h-[80vh] flex flex-col">
             <div className="flex justify-between items-center p-4 border-b border-gray-700">
               <h3 className="text-lg font-semibold text-white">PDF Preview</h3>
-              <div className="flex items-center gap-4">
-                <a
-                  href={selectedPdf}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  type="application/pdf"
-                  className="text-emerald-400 hover:text-emerald-300"
-                >
-                  Open in new tab
-                </a>
-                <button
-                  onClick={() => setSelectedPdf(null)}
-                  className="text-gray-400 hover:text-white"
-                >
-                  Close
-                </button>
-              </div>
+              <button
+                onClick={() => setSelectedPdf(null)}
+                className="text-gray-400 hover:text-white"
+              >
+                Close
+              </button>
             </div>
             <div className="flex-grow p-4">
               <iframe
-                src={`${selectedPdf}#view=FitH`}
+                src={`${selectedPdf}#toolbar=0&navpanes=0`}
                 className="w-full h-full rounded-lg bg-white"
                 title="PDF Preview"
               />

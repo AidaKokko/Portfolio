@@ -4,6 +4,7 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 import { useRouter } from 'next/navigation';
+import PDFViewer from '@/components/PDFViewer';
 
 export default function ViewCV() {
   const router = useRouter();
@@ -21,41 +22,7 @@ export default function ViewCV() {
             >
               <XMarkIcon className="h-6 w-6" />
             </button>
-            <object
-              data="/files/Aida Kokko-CV.pdf"
-              type="application/pdf"
-              className="w-full h-[calc(100vh-12rem)] rounded-lg"
-            >
-              <iframe
-                src="/files/Aida Kokko-CV.pdf"
-                className="w-full h-[calc(100vh-12rem)] rounded-lg"
-                title="Aida Kokko CV"
-              >
-                <div className="text-center p-8">
-                  <p className="text-white mb-4">
-                    Unable to display PDF directly. Please use one of the following options:
-                  </p>
-                  <div className="space-y-4">
-                    <a
-                      href="/files/Aida Kokko-CV.pdf"
-                      className="inline-block px-6 py-3 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Open PDF in New Tab
-                    </a>
-                    <br />
-                    <a
-                      href="/files/Aida Kokko-CV.pdf"
-                      download
-                      className="inline-block px-6 py-3 bg-gray-700 text-white rounded-lg hover:bg-gray-600 transition-colors"
-                    >
-                      Download PDF
-                    </a>
-                  </div>
-                </div>
-              </iframe>
-            </object>
+            <PDFViewer />
           </div>
         </div>
       </main>
