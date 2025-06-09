@@ -111,9 +111,7 @@ export default function Home() {
               Professional Profile
             </p>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              My international experience has equipped me with versatile skills and a deep understanding of cross-cultural communication. 
-              I bring a unique perspective to operations and events management, combining my experience from various roles in different countries 
-              to deliver exceptional results and create meaningful connections.
+              Hello! My name is Aida, and I bring a unique blend of IT expertise and diverse experience to the table as an operations administrator. In today's fast-paced technological landscape, organizations need professionals who not only understand the latest trends but also prioritize integrity and values. I've dedicated myself to continuous upskilling, ensuring that I'm always equipped with the latest tools and methodologies to drive efficiency and innovation. My mission is to leverage my skills and passion for technology to help organizations optimize operations and achieve their goals. If you're looking for a dedicated team member who truly cares about the success of your organization, let's connect and explore how I can contribute to your vision!
             </p>
           </div>
         </div>
