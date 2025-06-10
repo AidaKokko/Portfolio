@@ -419,8 +419,7 @@ export default function Home() {
                   period: 'Sept. 11, 2024',
                   description: 'Agile Project Management and Agile Delivery methodologies',
                   length: '3 hours',
-                  certificateUrl: '/certificates/Agile Crash Course.pdf',
-                  certificateImage: '/certificates/Agile Crash Course_Agile Project Management_certificate.jpg'
+                  certificateUrl: '/certificates/Agile Crash Course.pdf'
                 },
                 {
                   title: 'Git Going Fast',
@@ -428,8 +427,7 @@ export default function Home() {
                   period: 'Sept. 20, 2024',
                   description: 'One Hour Git Crash Course covering essential version control concepts',
                   length: '1.5 hours',
-                  certificateUrl: '/certificates/Git Crash Course.pdf',
-                  certificateImage: '/certificates/Git Crash Course.jpg'
+                  certificateUrl: '/certificates/Git Crash Course.pdf'
                 },
                 {
                   title: 'Learn Figma - UI/UX Design Essential Training',
@@ -437,8 +435,7 @@ export default function Home() {
                   period: 'Sept. 25, 2024',
                   description: 'Comprehensive training in UI/UX design using Figma',
                   length: '3.5 hours',
-                  certificateUrl: '/certificates/Learn Figma - UI_UX Design Essential Training.pdf',
-                  certificateImage: '/certificates/Learn Figma - UI_UX Design Essential Training.jpg'
+                  certificateUrl: '/certificates/Learn Figma - UI_UX Design Essential Training.pdf'
                 },
                 {
                   title: 'Detailed Guide to Building Wireframes Using Balsamiq Mockups',
@@ -446,8 +443,7 @@ export default function Home() {
                   period: 'Sept. 28, 2024',
                   description: 'Hands-on training in creating wireframes using Balsamiq Mockups',
                   length: '2 hours',
-                  certificateUrl: '/certificates/Wireframes Using Balsamiq Mockups.pdf',
-                  certificateImage: '/certificates/Wireframes Using Balsamiq Mockups.jpg'
+                  certificateUrl: '/certificates/Wireframes Using Balsamiq Mockups.pdf'
                 },
                 {
                   title: 'The Complete SQL Bootcamp',
@@ -455,8 +451,7 @@ export default function Home() {
                   period: 'Oct. 18, 2024',
                   description: 'Comprehensive SQL training from basics to advanced concepts',
                   length: '9 hours',
-                  certificateUrl: '/certificates/PostgreSQL certificate.pdf',
-                  certificateImage: '/certificates/PostgreSQL certificate.jpg'
+                  certificateUrl: '/certificates/PostgreSQL certificate.pdf'
                 },
                 {
                   title: 'Power BI Masterclass',
@@ -464,8 +459,7 @@ export default function Home() {
                   period: 'Oct. 25, 2024',
                   description: 'Masterclass in Power BI from scratch',
                   length: '1.5 hours',
-                  certificateUrl: '/certificates/PowerBI Crash Course.pdf',
-                  certificateImage: '/certificates/PowerBI Crash Course.jpg'
+                  certificateUrl: '/certificates/PowerBI Crash Course.pdf'
                 }
               ].map((development) => (
                 <div
@@ -477,25 +471,15 @@ export default function Home() {
                   <div className="text-sm text-gray-400">{development.period}</div>
                   <div className="text-sm text-gray-300">{development.description}</div>
                   <div className="text-sm text-emerald-400">Duration: {development.length}</div>
-                  <div className="mt-4 flex gap-2">
+                  <div className="mt-4">
                     <a
                       href={development.certificateUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-emerald-600 hover:bg-emerald-700 rounded-lg transition-colors duration-200 shadow-md"
                     >
-                      View PDF
+                      View Certificate
                     </a>
-                    {development.certificateImage && (
-                      <a
-                        href={development.certificateImage}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-emerald-600 hover:bg-emerald-700 rounded-lg transition-colors duration-200 shadow-md"
-                      >
-                        View Image
-                      </a>
-                    )}
                   </div>
                 </div>
               ))}
