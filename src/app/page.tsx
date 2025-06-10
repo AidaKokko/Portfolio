@@ -361,7 +361,8 @@ export default function Home() {
                   achievements: [
                     'Consistent Dean\'s Lister from first to fourth year',
                     'One of the founders of the "Nibblers," a student club that assists peers with academic issues.'
-                  ]
+                  ],
+                  diplomaUrl: '/diploma/BSIT_Diploma.jpg'
                 }
               ].map((education) => (
                 <div
@@ -384,6 +385,18 @@ export default function Home() {
                           <li key={index} className="text-sm text-gray-300">{achievement}</li>
                         ))}
                       </ul>
+                    </div>
+                  )}
+                  {education.diplomaUrl && (
+                    <div className="mt-4">
+                      <a
+                        href={education.diplomaUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-emerald-600 hover:bg-emerald-700 rounded-lg transition-colors duration-200 shadow-md"
+                      >
+                        View BSIT Diploma
+                      </a>
                     </div>
                   )}
                 </div>
