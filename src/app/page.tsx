@@ -360,7 +360,7 @@ export default function Home() {
                   description: 'Thesis: "Automated Gasoline Dispenser"',
                   achievements: [
                     'Consistent Dean\'s Lister from first to fourth year',
-                    'One of the ten founders of "The Nibblers," a student club that assists peers with academic issues. Founders are a group of students who excel at a specific subject and who then offer help to fellow students who are struggling by sharing each other\'s learning paths.'
+                    'One of the founders of the "Nibblers," a student club that assists peers with academic issues.'
                   ]
                 }
               ].map((education) => (
