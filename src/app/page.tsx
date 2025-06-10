@@ -507,7 +507,7 @@ export default function Home() {
                   period: "Feb 15, 2022",
                   description: "Comprehensive training on EU General Data Protection Regulation and its implications for international business operations.",
                   length: "7.5 hours",
-                  certificateUrl: "/certificates/EU%20GDPR%20for%20International%20Business.pdf"
+                  certificateUrl: "/certificates/EU GDPR for International Business.pdf"
                 },
                 {
                   title: "Microsoft Office Specialist: Excel Associate (Office 2019)",
