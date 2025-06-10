@@ -66,7 +66,7 @@ export default function Home() {
       period: "No. 6, 2024",
       description: "",
       length: "9.5 hours",
-      certificateUrl: "/certificates/AWS Cloud Computing.pdf"
+      certificateUrl: "/certificates/Introduction to Cloud Computing on AWS for Beginners [2024].pdf"
     }
   ];
 
@@ -443,7 +443,7 @@ export default function Home() {
                   period: 'Jan 15, 2022',
                   description: 'Intensive training program focused on preparing for the Finnish ICT job market.',
                   length: '160 hours',
-                  certificateUrl: '/certificates/ICT_Camp_Labour_Market_Training.pdf'
+                  certificateUrl: '/certificates/ICT Camp certificate.pdf'
                 },
                 {
                   title: 'Agile Crash Course',
@@ -507,7 +507,7 @@ export default function Home() {
                   period: "No. 6, 2024",
                   description: "",
                   length: "9.5 hours",
-                  certificateUrl: "/certificates/AWS Cloud Computing.pdf"
+                  certificateUrl: "/certificates/Introduction to Cloud Computing on AWS for Beginners [2024].pdf"
                 }
               ].map((training) => (
                 <div
