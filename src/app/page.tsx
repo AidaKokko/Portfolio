@@ -66,7 +66,7 @@ export default function Home() {
       period: "No. 6, 2024",
       description: "",
       length: "9.5 hours",
-      certificateUrl: "/certificates/Introduction to Cloud Computing on AWS for Beginners [2024].pdf"
+      certificateUrl: "/certificates/AWS Cloud Computing.pdf"
     }
   ];
 
@@ -439,11 +439,11 @@ export default function Home() {
               {[
                 {
                   title: 'ICT Camp Labour Market Training',
-                  provider: 'ICT Camp',
-                  period: 'Sept. 4, 2024 - Oct. 29, 2024',
-                  description: 'Comprehensive 280-hour training program covering various aspects of ICT and labor market skills',
-                  length: '280 hours',
-                  certificateUrl: '/certificates/ICTCampCertificate Aida Kokko.pdf'
+                  provider: 'BearIT',
+                  period: 'Jan 15, 2022',
+                  description: 'Intensive training program focused on preparing for the Finnish ICT job market.',
+                  length: '160 hours',
+                  certificateUrl: '/certificates/ICT_Camp_Labour_Market_Training.pdf'
                 },
                 {
                   title: 'Agile Crash Course',
@@ -507,21 +507,21 @@ export default function Home() {
                   period: "No. 6, 2024",
                   description: "",
                   length: "9.5 hours",
-                  certificateUrl: "/certificates/Introduction to Cloud Computing on AWS for Beginners [2024].pdf"
+                  certificateUrl: "/certificates/AWS Cloud Computing.pdf"
                 }
-              ].map((development) => (
+              ].map((training) => (
                 <div
-                  key={development.title}
+                  key={training.title}
                   className="relative flex flex-col gap-y-2 rounded-lg border border-gray-700 bg-gray-800 px-6 py-5 shadow-sm hover:shadow-md transition-all hover:border-emerald-500"
                 >
-                  <div className="text-lg font-semibold leading-6 text-emerald-400">{development.title}</div>
-                  <div className="text-base text-white">{development.provider}</div>
-                  <div className="text-sm text-gray-400">{development.period}</div>
-                  <div className="text-sm text-gray-300">{development.description}</div>
-                  <div className="text-sm text-emerald-400">Duration: {development.length}</div>
+                  <div className="text-lg font-semibold leading-6 text-emerald-400">{training.title}</div>
+                  <div className="text-base text-white">{training.provider}</div>
+                  <div className="text-sm text-gray-400">{training.period}</div>
+                  <div className="text-sm text-gray-300">{training.description}</div>
+                  <div className="text-sm text-emerald-400">Duration: {training.length}</div>
                   <div className="mt-4">
                     <a
-                      href={development.certificateUrl}
+                      href={training.certificateUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-emerald-600 hover:bg-emerald-700 rounded-lg transition-colors duration-200 shadow-md"
