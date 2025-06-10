@@ -504,12 +504,12 @@ export default function Home() {
                   certificateUrl: "/certificates/EU_GDPR_for_International_Business.pdf"
                 },
                 {
-                  title: "Microsoft Office Specialist: Excel Associate (Office 2019)",
-                  provider: "Microsoft",
-                  period: "Feb 15, 2022",
-                  description: "Comprehensive training in advanced Excel functions, data analysis, and business intelligence tools.",
-                  length: "40 hours",
-                  certificateUrl: "/certificates/Excel_Associate_Certificate.pdf"
+                  title: "Introduction to Cloud Computing on AWS for Beginners [2024]",
+                  provider: "AWS",
+                  period: "No. 6, 2024",
+                  description: "",
+                  length: "9.5 hours",
+                  certificateUrl: "/certificates/Introduction to Cloud Computing on AWS for Beginners [2024].pdf"
                 }
               ].map((development) => (
                 <div
