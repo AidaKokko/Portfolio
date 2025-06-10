@@ -61,6 +61,14 @@ export default function Home() {
       certificateUrl: "/certificates/EU_GDPR_for_International_Business.pdf"
     },
     {
+      title: "ICT Camp Labour Market Training",
+      provider: "BearIT",
+      period: "Jan 15, 2022",
+      description: "Intensive training program focused on preparing for the Finnish ICT job market.",
+      length: "160 hours",
+      certificateUrl: "/certificates/ICT Camp certificate.pdf"
+    },
+    {
       title: "Introduction to Cloud Computing on AWS for Beginners [2024]",
       provider: "AWS",
       period: "No. 6, 2024",
@@ -129,9 +137,9 @@ export default function Home() {
             <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
               Professional Profile
             </p>
-            <div className="mt-6 text-lg leading-8 text-gray-300 text-justify whitespace-pre-line">
-              Hello! My name is Aida, and I bring a unique blend of IT expertise and diverse experience to the table as an operations administrator. In today's fast-paced technological landscape, organizations need professionals who not only understand the latest trends but also prioritize integrity and values. I've dedicated myself to continuous upskilling, ensuring that I'm always equipped with the latest tools and methodologies to drive efficiency and innovation. My mission is to leverage my skills and passion for technology to help organizations optimize operations and achieve their goals. If you're looking for a dedicated team member who truly cares about the success of your organization, let's connect and explore how I can contribute to your vision!
-            </div>
+            <p className="mt-6 text-lg leading-8 text-gray-300 text-left md:text-justify whitespace-pre-line">
+              I am Aida, an IT professional with a strong foundation in both technical and business aspects of information technology. My journey in the tech industry has been driven by a passion for creating efficient, user-friendly solutions that make a real impact.
+            </p>
           </div>
         </div>
       </section>
@@ -437,14 +445,6 @@ export default function Home() {
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
             <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
               {[
-                {
-                  title: 'ICT Camp Labour Market Training',
-                  provider: 'BearIT',
-                  period: 'Jan 15, 2022',
-                  description: 'Intensive training program focused on preparing for the Finnish ICT job market.',
-                  length: '160 hours',
-                  certificateUrl: '/certificates/ICT Camp certificate.pdf'
-                },
                 {
                   title: 'Agile Crash Course',
                   provider: 'Udemy',
