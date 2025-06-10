@@ -507,7 +507,7 @@ export default function Home() {
                   period: "Feb 15, 2022",
                   description: "Comprehensive training on EU General Data Protection Regulation and its implications for international business operations.",
                   length: "7.5 hours",
-                  certificateUrl: "/certificates/GDPR_certificate.pdf"
+                  certificateUrl: "./certificates/GDPR_certificate.pdf"
                 },
                 {
                   title: "Microsoft Office Specialist: Excel Associate (Office 2019)",
@@ -524,14 +524,6 @@ export default function Home() {
                   description: "Advanced training in document creation, formatting, and professional word processing techniques.",
                   length: "40 hours",
                   certificateUrl: "/certificates/Word_Associate_Certificate.pdf"
-                },
-                {
-                  title: "Microsoft Office Specialist: PowerPoint Associate (Office 2019)",
-                  provider: "Microsoft",
-                  period: "Feb 15, 2022",
-                  description: "Professional training in presentation design, multimedia integration, and effective communication techniques.",
-                  length: "40 hours",
-                  certificateUrl: "/certificates/PowerPoint_Associate_Certificate.pdf"
                 }
               ].map((development) => (
                 <div
