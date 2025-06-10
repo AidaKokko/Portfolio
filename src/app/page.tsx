@@ -51,6 +51,33 @@ export default function Home() {
     }
   };
 
+  const trainings = [
+    {
+      title: "EU GDPR for International Business",
+      date: "15.2.2022",
+      length: "7.5 hours",
+      description: "Comprehensive training on EU General Data Protection Regulation and its implications for international business operations."
+    },
+    {
+      title: "Microsoft Office Specialist: Excel Associate (Office 2019)",
+      date: "15.2.2022",
+      length: "40 hours",
+      description: "Comprehensive training in advanced Excel functions, data analysis, and business intelligence tools."
+    },
+    {
+      title: "Microsoft Office Specialist: Word Associate (Office 2019)",
+      date: "15.2.2022",
+      length: "40 hours",
+      description: "Advanced training in document creation, formatting, and professional word processing techniques."
+    },
+    {
+      title: "Microsoft Office Specialist: PowerPoint Associate (Office 2019)",
+      date: "15.2.2022",
+      length: "40 hours",
+      description: "Professional training in presentation design, multimedia integration, and effective communication techniques."
+    }
+  ];
+
   return (
     <main className="min-h-screen bg-gray-900 text-white">
       <Navbar />
@@ -110,9 +137,9 @@ export default function Home() {
             <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
               Professional Profile
             </p>
-            <p className="mt-6 text-lg leading-8 text-gray-300">
+            <div className="mt-6 text-lg leading-8 text-gray-300 text-justify whitespace-pre-line">
               Hello! My name is Aida, and I bring a unique blend of IT expertise and diverse experience to the table as an operations administrator. In today's fast-paced technological landscape, organizations need professionals who not only understand the latest trends but also prioritize integrity and values. I've dedicated myself to continuous upskilling, ensuring that I'm always equipped with the latest tools and methodologies to drive efficiency and innovation. My mission is to leverage my skills and passion for technology to help organizations optimize operations and achieve their goals. If you're looking for a dedicated team member who truly cares about the success of your organization, let's connect and explore how I can contribute to your vision!
-            </p>
+            </div>
           </div>
         </div>
       </section>
@@ -395,7 +422,7 @@ export default function Home() {
                         rel="noopener noreferrer"
                         className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-emerald-600 hover:bg-emerald-700 rounded-lg transition-colors duration-200 shadow-md"
                       >
-                        View BSIT Diploma Image
+                        View Diploma
                       </a>
                     </div>
                   )}
@@ -473,6 +500,38 @@ export default function Home() {
                   description: 'Masterclass in Power BI from scratch',
                   length: '1.5 hours',
                   certificateUrl: '/certificates/PowerBI Crash Course.pdf'
+                },
+                {
+                  title: "EU GDPR for International Business",
+                  provider: "Professional Training",
+                  period: "Feb 15, 2022",
+                  description: "Comprehensive training on EU General Data Protection Regulation and its implications for international business operations.",
+                  length: "7.5 hours",
+                  certificateUrl: "/certificates/GDPR_certificate.pdf"
+                },
+                {
+                  title: "Microsoft Office Specialist: Excel Associate (Office 2019)",
+                  provider: "Microsoft",
+                  period: "Feb 15, 2022",
+                  description: "Comprehensive training in advanced Excel functions, data analysis, and business intelligence tools.",
+                  length: "40 hours",
+                  certificateUrl: "/certificates/Excel_Associate_Certificate.pdf"
+                },
+                {
+                  title: "Microsoft Office Specialist: Word Associate (Office 2019)",
+                  provider: "Microsoft",
+                  period: "Feb 15, 2022",
+                  description: "Advanced training in document creation, formatting, and professional word processing techniques.",
+                  length: "40 hours",
+                  certificateUrl: "/certificates/Word_Associate_Certificate.pdf"
+                },
+                {
+                  title: "Microsoft Office Specialist: PowerPoint Associate (Office 2019)",
+                  provider: "Microsoft",
+                  period: "Feb 15, 2022",
+                  description: "Professional training in presentation design, multimedia integration, and effective communication techniques.",
+                  length: "40 hours",
+                  certificateUrl: "/certificates/PowerPoint_Associate_Certificate.pdf"
                 }
               ].map((development) => (
                 <div
