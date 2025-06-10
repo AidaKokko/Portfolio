@@ -65,7 +65,7 @@ export default function Home() {
       provider: "BearIT",
       period: "Jan 15, 2022",
       description: "Intensive training program focused on preparing for the Finnish ICT job market.",
-      length: "160 hours",
+      length: "280 hours",
       certificateUrl: "/certificates/ICT Camp certificate.pdf"
     },
     {
@@ -218,7 +218,6 @@ export default function Home() {
                       <div className="ml-6 space-y-2">
                         <p>• Collected manuscripts and PowerPoint presentations from speakers from different countries through the Oxford Abstract platform.</p>
                         <p>• Created the conference cue sheet for six parallel sessions.</p>
-                        <p>• Gained access to the event server, ensuring that everything ran smoothly during conference week.</p>
                       </div>
                       <div className="mt-2">
                         <p className="text-sm text-purple-400">Tools Used: Microsoft Teams, Eventos Event Management Software, Oxford Abstracts Platform, Microsoft Excel, Canva, Outlook for mass mailing</p>
@@ -238,7 +237,6 @@ export default function Home() {
                       <div className="ml-6 space-y-2">
                         <p>• Created a work cycle sheet for operations and modified the school's blueprint, resulting in more efficient operations.</p>
                         <p>• Created a digital version of the school's booking request form and the cleaners' weekly checklists.</p>
-                        <p>• Created a shared Google Calendar for school events and facility booking requests.</p>
                       </div>
                       <div className="mt-2">
                         <p className="text-sm text-purple-400">Tools Used: Google Cloud, Microsoft Office Suite, Google Calendar, Google Forms, Adobe Illustrator & Photoshop</p>
@@ -294,7 +292,6 @@ export default function Home() {
                     <div className="space-y-2">
                       <p>Full-time role providing customer support services in a BPO environment.</p>
                       <div className="ml-6 space-y-2">
-                        <p>• Appointed as FA (floor assist) ever since I was in tier 1 until I reached tier 3.</p>
                         <p>• One of the top-performing customer service representatives who constantly received 100% QA scorecards.</p>
                         <p>• Recognized as one of the customer support representatives who has solved 80% of escalation tickets.</p>
                       </div>
