@@ -63,7 +63,7 @@ export default function Home() {
     {
       title: "ICT Camp Labour Market Training",
       provider: "BearIT",
-      period: "Jan 15, 2024 - Oct. 29, 2024",
+      period: "Sep. 04, 2024 - Oct. 29, 2024",
       description: "Intensive training program focused on preparing for the Finnish ICT job market.",
       length: "280 hours",
       certificateUrl: "/certificates/ICT Camp certificate.pdf"
@@ -71,10 +71,18 @@ export default function Home() {
     {
       title: "Introduction to Cloud Computing on AWS for Beginners [2024]",
       provider: "AWS",
-      period: "No. 6, 2024",
+      period: "Nov. 6, 2024",
       description: "",
       length: "9.5 hours",
       certificateUrl: "/certificates/Introduction to Cloud Computing on AWS for Beginners [2024].pdf"
+    },
+    {
+      title: "AWS Cloud Practitioner",
+      provider: "AWS",
+      period: "Nov. 6, 2024",
+      description: "Comprehensive training covering AWS cloud concepts, services, security, architecture, pricing, and support.",
+      length: "40 hours",
+      certificateUrl: "/certificates/AWS_certificate.pdf"
     }
   ];
 
@@ -501,7 +509,7 @@ export default function Home() {
                 {
                   title: "ICT Camp Labour Market Training",
                   provider: "BearIT",
-                  period: "Jan 15, 2024 - Oct. 29, 2024",
+                  period: "Sep. 04, 2024 - Oct. 29, 2024",
                   description: "Intensive training program focused on preparing for the Finnish ICT job market.",
                   length: "280 hours",
                   certificateUrl: "/certificates/ICT Camp certificate.pdf"
@@ -509,10 +517,18 @@ export default function Home() {
                 {
                   title: "Introduction to Cloud Computing on AWS for Beginners [2024]",
                   provider: "AWS",
-                  period: "No. 6, 2024",
+                  period: "Nov. 6, 2024",
                   description: "",
                   length: "9.5 hours",
                   certificateUrl: "/certificates/Introduction to Cloud Computing on AWS for Beginners [2024].pdf"
+                },
+                {
+                  title: "AWS Cloud Practitioner",
+                  provider: "AWS",
+                  period: "Nov. 6, 2024",
+                  description: "Comprehensive training covering AWS cloud concepts, services, security, architecture, pricing, and support.",
+                  length: "40 hours",
+                  certificateUrl: "/certificates/AWS_certificate.pdf"
                 }
               ].map((training) => (
                 <div
