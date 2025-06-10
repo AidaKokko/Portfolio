@@ -345,18 +345,23 @@ export default function Home() {
             <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
               {[
                 {
-                  title: 'Bachelor of Business Administration',
+                  title: 'International Business and Logistics',
                   institution: 'Tampere University of Applied Sciences',
                   location: 'Tampere, Finland',
-                  period: '2020 - 2023',
-                  description: 'Major in International Business'
+                  period: 'Oct 2022 - May 2023',
+                  description: 'Extended Education',
+                  details: 'Case study: "Celltech Battery Solutions to Brazil"'
                 },
                 {
-                  title: 'Bachelor of Business Administration',
-                  institution: 'Haaga-Helia University of Applied Sciences',
-                  location: 'Helsinki, Finland',
-                  period: '2019 - 2020',
-                  description: 'Major in International Business'
+                  title: 'Bachelor of Science in Information Technology',
+                  institution: 'University of the Visayas',
+                  location: 'Philippines',
+                  period: 'Jun 2003 - Mar 2007',
+                  description: 'Thesis: "Automated Gasoline Dispenser"',
+                  achievements: [
+                    'Consistent Dean\'s Lister from first to fourth year',
+                    'One of the ten founders of "The Nibblers," a student club that assists peers with academic issues. Founders are a group of students who excel at a specific subject and who then offer help to fellow students who are struggling by sharing each other\'s learning paths.'
+                  ]
                 }
               ].map((education) => (
                 <div
@@ -368,6 +373,19 @@ export default function Home() {
                   <div className="text-sm text-gray-300">{education.location}</div>
                   <div className="text-sm text-gray-400">{education.period}</div>
                   <div className="text-sm text-gray-300">{education.description}</div>
+                  {education.details && (
+                    <div className="text-sm text-gray-300 mt-2">{education.details}</div>
+                  )}
+                  {education.achievements && (
+                    <div className="mt-2">
+                      <div className="text-sm font-medium text-emerald-400 mb-1">Achievements:</div>
+                      <ul className="list-disc list-inside space-y-1">
+                        {education.achievements.map((achievement, index) => (
+                          <li key={index} className="text-sm text-gray-300">{achievement}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                 </div>
               ))}
             </dl>
