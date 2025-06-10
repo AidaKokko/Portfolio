@@ -395,7 +395,7 @@ export default function Home() {
                         rel="noopener noreferrer"
                         className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-emerald-600 hover:bg-emerald-700 rounded-lg transition-colors duration-200 shadow-md"
                       >
-                        View BSIT Diploma
+                        View BSIT Diploma Image
                       </a>
                     </div>
                   )}
