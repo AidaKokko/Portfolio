@@ -71,10 +71,34 @@ export default function Home() {
     {
       title: "Introduction to Cloud Computing on AWS for Beginners [2024]",
       provider: "Udemy",
-      period: "Feb. 15, 2024",
+      period: "Nov. 6, 2024",
       description: "Comprehensive training covering AWS cloud concepts, services, security, architecture, pricing, and support.",
       length: "9.5 hours",
-      certificateUrl: "/certificates/AWS_certificate.pdf"
+      certificateUrl: "/certificates/Introduction to Cloud Computing on AWS for Beginners [2024].pdf"
+    }
+  ];
+
+  const workExperience = [
+    {
+      title: "IT Support Specialist",
+      company: "Tampere University",
+      period: "Jan. 2024 - Present",
+      description: "Providing technical support and assistance to university staff and students.",
+      location: "Tampere, Finland"
+    },
+    {
+      title: "IT Support Specialist",
+      company: "Tampere University",
+      period: "Sep. 2023 - Dec. 2023",
+      description: "Provided technical support and assistance to university staff and students.",
+      location: "Tampere, Finland"
+    },
+    {
+      title: "IT Support Specialist",
+      company: "Tampere University",
+      period: "Jun. 2023 - Aug. 2023",
+      description: "Provided technical support and assistance to university staff and students.",
+      location: "Tampere, Finland"
     }
   ];
 
@@ -205,141 +229,7 @@ export default function Home() {
           </div>
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
             <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
-              {[
-                {
-                  title: 'Conference Assistant (Internship)',
-                  company: 'Glaston Corporation',
-                  companyDesc: 'A global leader in glass processing technology, providing innovative solutions for architectural, automotive, and solar glass industries.',
-                  location: 'Tampere, Finland',
-                  period: 'Mar 2023 - Jun 2023',
-                  description: (
-                    <div className="space-y-2">
-                      <p>Completed a 4-month internship in a hybrid work environment, gaining valuable industry experience.</p>
-                      <div className="ml-6 space-y-2">
-                        <p>• Collected manuscripts and PowerPoint presentations from speakers from different countries through the Oxford Abstract platform.</p>
-                        <p>• Created the conference cue sheet for six parallel sessions.</p>
-                      </div>
-                      <div className="mt-2">
-                        <p className="text-sm text-purple-400">Tools Used: Microsoft Teams, Eventos Event Management Software, Oxford Abstracts Platform, Microsoft Excel, Canva, Outlook for mass mailing</p>
-                      </div>
-                    </div>
-                  ),
-                },
-                {
-                  title: 'Operations Administrator',
-                  company: 'Al Salam Private School & Nursery',
-                  companyDesc: 'A prestigious educational institution in Dubai offering comprehensive education from nursery to secondary levels.',
-                  location: 'Dubai, United Arab Emirates',
-                  period: 'Sep 2017 - Sep 2018',
-                  description: (
-                    <div className="space-y-2">
-                      <p>Full-time role managing daily operations and administrative tasks in an educational institution.</p>
-                      <div className="ml-6 space-y-2">
-                        <p>• Created a work cycle sheet for operations and modified the school's blueprint, resulting in more efficient operations.</p>
-                        <p>• Created a digital version of the school's booking request form and the cleaners' weekly checklists.</p>
-                      </div>
-                      <div className="mt-2">
-                        <p className="text-sm text-purple-400">Tools Used: Google Cloud, Microsoft Office Suite, Google Calendar, Google Forms, Adobe Illustrator & Photoshop</p>
-                      </div>
-                    </div>
-                  ),
-                },
-                {
-                  title: 'HR Administrator Assistant',
-                  company: 'Integra Recruiters Asia Pte Ltd',
-                  companyDesc: 'A leading recruitment firm specializing in executive search and talent acquisition across Asia.',
-                  location: 'Singapore',
-                  period: 'Aug 2015 - Aug 2016',
-                  description: (
-                    <div className="space-y-2">
-                      <p>Full-time role providing comprehensive HR administrative support in a recruitment firm.</p>
-                      <div className="ml-6 space-y-2">
-                        <p>• Sealed a subcontract deal with Dragages Singapore Pte Ltd, one of Singapore's largest construction firms.</p>
-                        <p>• Onboarded 50+ construction workers as subcontract workers.</p>
-                      </div>
-                      <div className="mt-2">
-                        <p className="text-sm text-purple-400">Tools Used: Info-Tech HRM System, Google Forms, Microsoft Office Suite</p>
-                      </div>
-                    </div>
-                  ),
-                },
-                {
-                  title: 'Junior Graphic Designer',
-                  company: 'Charisma Elite Marketing',
-                  companyDesc: 'A dynamic marketing agency providing creative solutions for brand development and digital marketing.',
-                  location: 'Petaling Jaya, Malaysia',
-                  period: 'Jan 2014 - Jun 2015',
-                  description: (
-                    <div className="space-y-2">
-                      <p>Full-time role creating visual content and design materials for marketing campaigns.</p>
-                      <div className="ml-6 space-y-2">
-                        <p>• Designed and prepared visual materials for print and digital formats, including brochures, business cards, flyers, and large-scale signage.</p>
-                        <p>• Ensured high-quality output by performing prepress checks and adhering to color, resolution, and print standards.</p>
-                      </div>
-                      <div className="mt-2">
-                        <p className="text-sm text-purple-400">Tools Used: Adobe Creative Suite (Illustrator, PhotoShop, InDesign, PDF editor), Rainbow card printer, Silhouette Studio</p>
-                      </div>
-                    </div>
-                  ),
-                },
-                {
-                  title: 'Customer Support Representative',
-                  company: 'Qualfon',
-                  companyDesc: 'A USA-based global business process outsourcing (BPO) company delivering customer experience solutions.',
-                  location: 'Cebu City, Philippines',
-                  period: 'Jun 2010 - Mar 2012',
-                  description: (
-                    <div className="space-y-2">
-                      <p>Full-time role providing customer support services in a BPO environment.</p>
-                      <div className="ml-6 space-y-2">
-                        <p>• One of the top-performing customer service representatives who constantly received 100% QA scorecards.</p>
-                        <p>• Recognized as one of the customer support representatives who has solved 80% of escalation tickets.</p>
-                      </div>
-                      <div className="mt-2">
-                        <p className="text-sm text-purple-400">Tools Used: Avaya for call handling & routing, Siebel CRM (Oracle) for Ticketing, CSG International for Billing, Citrix for remote system access</p>
-                      </div>
-                    </div>
-                  ),
-                },
-                {
-                  title: 'Technical Writer',
-                  company: 'MedSpecialized, Inc.',
-                  companyDesc: 'A USA-based healthcare technology company specializing in medical documentation and healthcare solutions.',
-                  location: 'Cebu City, Philippines',
-                  period: 'Jan 2009 - Nov 2009',
-                  description: (
-                    <div className="space-y-2">
-                      <p>Full-time role creating technical documentation and content for healthcare solutions.</p>
-                      <div className="ml-6 space-y-2">
-                        <p>• Created technical manuals, user guides, and product documentation in collaboration with software developers and software testers.</p>
-                        <p>• Translated complex technical information into clear, user-friendly content for internal and external audiences.</p>
-                      </div>
-                      <div className="mt-2">
-                        <p className="text-sm text-purple-400">Tools Used: Adobe FrameMaker, Microsoft Word, Adobe Acrobat Professional, SnagIt, Version Control System</p>
-                      </div>
-                    </div>
-                  ),
-                },
-                {
-                  title: 'Market Analyst',
-                  company: 'AKAYIN CORP',
-                  companyDesc: 'A USA-based business consulting firm focused on market research and business strategy development.',
-                  location: 'Lapu-Lapu, Philippines',
-                  period: 'May 2007 - Jun 2008',
-                  description: (
-                    <div className="space-y-2">
-                      <p>Full-time role conducting market research and analysis to support business decisions.</p>
-                      <div className="ml-6 space-y-2">
-                        <p>• Responsible for gathering and analyzing large amounts of customer data pertaining to the company's target market, as well as distributing prospect leads to the sales department.</p>
-                        <p>• Filter potential leads so that sales representatives can make more sales by calling the right customers.</p>
-                      </div>
-                      <div className="mt-2">
-                        <p className="text-sm text-purple-400">Tools Used: Microsoft Excel, Microsoft Access, 6sense cloud-based sales intelligence platform</p>
-                      </div>
-                    </div>
-                  ),
-                },
-              ].map((role) => (
+              {workExperience.map((role) => (
                 <div key={role.title} className="flex flex-col bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow border border-gray-700 hover:border-emerald-500">
                   <dt className="text-base font-semibold leading-7 text-white">
                     {role.title}
@@ -347,8 +237,7 @@ export default function Home() {
                   </dt>
                   <dd className="mt-1 text-sm leading-6 text-gray-300">{role.location}</dd>
                   <dd className="mt-1 text-sm leading-6 text-emerald-400">{role.period}</dd>
-                  <dd className="mt-2 text-sm leading-6 text-gray-400 italic">{role.companyDesc}</dd>
-                  <dd className="mt-2 text-base leading-7 text-gray-300">{role.description}</dd>
+                  <dd className="mt-2 text-sm leading-6 text-gray-400 italic">{role.description}</dd>
                 </div>
               ))}
             </dl>
@@ -509,10 +398,10 @@ export default function Home() {
                 {
                   title: "Introduction to Cloud Computing on AWS for Beginners [2024]",
                   provider: "Udemy",
-                  period: "Feb. 15, 2024",
+                  period: "Nov. 6, 2024",
                   description: "Comprehensive training covering AWS cloud concepts, services, security, architecture, pricing, and support.",
                   length: "9.5 hours",
-                  certificateUrl: "/certificates/AWS_certificate.pdf"
+                  certificateUrl: "/certificates/Introduction to Cloud Computing on AWS for Beginners [2024].pdf"
                 }
               ].map((training) => (
                 <div
