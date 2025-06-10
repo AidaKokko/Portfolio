@@ -54,21 +54,19 @@ export default function Home() {
   const trainings = [
     {
       title: "EU GDPR for International Business",
-      date: "15.2.2022",
-      length: "7.5 hours",
-      description: "Comprehensive training on EU General Data Protection Regulation and its implications for international business operations."
+      provider: "Udemy",
+      period: "Feb 15, 2022",
+      description: "Comprehensive training on EU GDPR compliance for international business operations.",
+      length: "3 hours",
+      certificateUrl: "/certificates/EU_GDPR_for_International_Business.pdf"
     },
     {
-      title: "Microsoft Office Specialist: Excel Associate (Office 2019)",
-      date: "15.2.2022",
-      length: "40 hours",
-      description: "Comprehensive training in advanced Excel functions, data analysis, and business intelligence tools."
-    },
-    {
-      title: "Microsoft Office Specialist: PowerPoint Associate (Office 2019)",
-      date: "15.2.2022",
-      length: "40 hours",
-      description: "Professional training in presentation design, multimedia integration, and effective communication techniques."
+      title: "Introduction to Cloud Computing on AWS for Beginners [2024]",
+      provider: "AWS",
+      period: "No. 6, 2024",
+      description: "",
+      length: "9.5 hours",
+      certificateUrl: "/certificates/Introduction to Cloud Computing on AWS for Beginners [2024].pdf"
     }
   ];
 
