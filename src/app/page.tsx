@@ -63,7 +63,7 @@ export default function Home() {
     {
       title: "ICT Camp Labour Market Training",
       provider: "BearIT",
-      period: "Jan 15, 2022",
+      period: "Jan 15, 2024 - Oct. 29, 2024",
       description: "Intensive training program focused on preparing for the Finnish ICT job market.",
       length: "280 hours",
       certificateUrl: "/certificates/ICT Camp certificate.pdf"
@@ -138,7 +138,7 @@ export default function Home() {
               Professional Profile
             </p>
             <p className="mt-6 text-lg leading-8 text-gray-300 text-left md:text-justify whitespace-pre-line">
-              I am Aida, an IT professional with a strong foundation in both technical and business aspects of information technology. My journey in the tech industry has been driven by a passion for creating efficient, user-friendly solutions that make a real impact.
+              Hello! My name is Aida, and I bring a unique blend of IT expertise and diverse experience to the table as an operations administrator. In today's fast-paced technological landscape, organizations need professionals who not only understand the latest trends but also prioritize integrity and values. I've dedicated myself to continuous upskilling, ensuring that I'm always equipped with the latest tools and methodologies to drive efficiency and innovation. My mission is to leverage my skills and passion for technology to help organizations optimize operations and achieve their goals. If you're looking for a dedicated team member who truly cares about the success of your organization, let's connect and explore how I can contribute to your vision!
             </p>
           </div>
         </div>
@@ -501,7 +501,7 @@ export default function Home() {
                 {
                   title: "ICT Camp Labour Market Training",
                   provider: "BearIT",
-                  period: "Jan 15, 2022",
+                  period: "Jan 15, 2024 - Oct. 29, 2024",
                   description: "Intensive training program focused on preparing for the Finnish ICT job market.",
                   length: "280 hours",
                   certificateUrl: "/certificates/ICT Camp certificate.pdf"
