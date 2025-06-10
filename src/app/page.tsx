@@ -65,12 +65,6 @@ export default function Home() {
       description: "Comprehensive training in advanced Excel functions, data analysis, and business intelligence tools."
     },
     {
-      title: "Microsoft Office Specialist: Word Associate (Office 2019)",
-      date: "15.2.2022",
-      length: "40 hours",
-      description: "Advanced training in document creation, formatting, and professional word processing techniques."
-    },
-    {
       title: "Microsoft Office Specialist: PowerPoint Associate (Office 2019)",
       date: "15.2.2022",
       length: "40 hours",
@@ -516,14 +510,6 @@ export default function Home() {
                   description: "Comprehensive training in advanced Excel functions, data analysis, and business intelligence tools.",
                   length: "40 hours",
                   certificateUrl: "/certificates/Excel_Associate_Certificate.pdf"
-                },
-                {
-                  title: "Microsoft Office Specialist: Word Associate (Office 2019)",
-                  provider: "Microsoft",
-                  period: "Feb 15, 2022",
-                  description: "Advanced training in document creation, formatting, and professional word processing techniques.",
-                  length: "40 hours",
-                  certificateUrl: "/certificates/Word_Associate_Certificate.pdf"
                 }
               ].map((development) => (
                 <div
