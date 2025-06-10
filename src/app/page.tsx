@@ -499,6 +499,14 @@ export default function Home() {
                   certificateUrl: "/certificates/EU_GDPR_for_International_Business.pdf"
                 },
                 {
+                  title: "ICT Camp Labour Market Training",
+                  provider: "BearIT",
+                  period: "Jan 15, 2022",
+                  description: "Intensive training program focused on preparing for the Finnish ICT job market.",
+                  length: "280 hours",
+                  certificateUrl: "/certificates/ICT Camp certificate.pdf"
+                },
+                {
                   title: "Introduction to Cloud Computing on AWS for Beginners [2024]",
                   provider: "AWS",
                   period: "No. 6, 2024",
