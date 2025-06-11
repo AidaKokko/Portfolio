@@ -77,7 +77,7 @@ export default function Home() {
           </dt>
           <dd className="mt-1 text-sm leading-6 text-gray-300">{role.location}</dd>
           <dd className="mt-1 text-sm leading-6 text-emerald-400">{role.period}</dd>
-          <dd className="mt-2 text-sm leading-6 text-gray-300 italic border-l-4 border-emerald-500 pl-4 py-1 bg-gray-700/50 rounded-r">{role.company_description}</dd>
+          <dd className="mt-2 text-sm leading-6 text-gray-400 italic border-l-2 border-emerald-500 pl-3">{role.company_description}</dd>
           <dd className="mt-2 text-sm leading-6 text-gray-400">
             {role.description.split('\n\n').map((bullet, index) => (
               <div key={index} className="mb-2 italic">{bullet}</div>
