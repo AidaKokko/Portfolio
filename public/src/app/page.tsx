@@ -60,7 +60,7 @@ const workExperience = [
     company: "Akayin Corp.",
     location: "Lapu-Lapu, Philippines",
     period: "May 2007 - Jun 2008",
-    company_info: "A USA-based business consulting firm focused on market research and business strategy development.",
+    company_description: "A USA-based business consulting firm focused on market research and business strategy development.",
     description: "• Responsible for gathering and analyzing large amounts of customer data pertaining to the company's target market, as well as distributing prospect leads to the sales department.\n\n• Filter potential leads so that sales representatives can make more sales by calling the right customers.",
     tools_used: "Tools Used: Microsoft Excel, Microsoft Access, 6sense cloud-based sales intelligence platform"
   }
@@ -82,9 +82,9 @@ export default function Home() {
             <dd className="mt-2">
               <div className="text-sm font-medium text-purple-400 mb-1">Tools Used:</div>
               <div className="flex flex-wrap gap-2">
-                {role.tools_used.split('\n').map((line, index) => (
+                {role.tools_used.replace("Tools Used: ", "").split(", ").map((tool, index) => (
                   <span key={index} className="text-sm text-purple-300 bg-gray-700 px-2 py-1 rounded">
-                    {line}
+                    {tool}
                   </span>
                 ))}
               </div>
