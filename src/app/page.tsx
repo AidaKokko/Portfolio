@@ -218,7 +218,6 @@ const workExperience = [
             </div>
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl mb-4">
               Aida Kokko
-              <span className="text-red-500"> THIS IS A TEST</span>
             </h1>
             <p className="text-xl text-emerald-400 font-medium mb-4">
               Creative Generalist
